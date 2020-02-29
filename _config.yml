@@ -1,0 +1,22 @@
+title: Evileye.eu.org SuperHero Server
+url: https://ibiruai.github.io
+staticman-url: https://staticman3.herokuapp.com/v3/entry/github/ibiruai/ibiruai.github.io/master/comments
+comments:
+  en: Comments
+  ru: Комментарии
+comments-name:
+  en: Name
+  ru: Имя
+comments-message:
+  en: Message
+  ru: Сообщение
+comments-send:
+  en: Send
+  ru: Отправить
+server-status:
+  en: Server status
+  ru: Состояние сервера
+description:
+  en: This is Counter-Strike 1.6 server with SuperHero mod. Kill your opponents to gain XP and level up. Every level you'll be able to pick a new superpower.
+  ru: Сервер Counter-Strike 1.6 с SuperHero модом. Зарабатывайте очки опыта за убийства оппонентов, поднимайтесь в уровне и выбирайте способности.
+server-address: 95.142.47.100:27015

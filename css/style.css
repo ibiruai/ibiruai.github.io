@@ -1,7 +1,7 @@
 body {
 	font-family: sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 11pt;
+	line-height: 16pt;
 	background-color: #DDD;
 }
 h1 {
@@ -21,8 +21,8 @@ td {
 {
 	font-family: Courier New, monospace;
 }
-.wrapper {
-	max-width: 600px;
+#wrapper {
+	max-width: 700px;
 	margin: 0 auto;
 }
 p, ul, #punisher {
@@ -53,14 +53,10 @@ h3 {
 .languages {
 	text-align: right;
 }
-iframe {
-	margin: -8px -8px -12px -8px;
-	border: 0;
-}
 .explanation {
 	font-style: italic;
 }
-.wrapper a,
+a,
 .bot,
 .property,
 .level {
@@ -72,4 +68,22 @@ iframe {
 .human,
 .active_power {
 	color: green;
+}
+.comment-name {
+	font-weight: bold;
+}
+.comment-date {
+	color: grey;
+}
+.comment {
+	border: 1px solid darkgrey;
+	margin: 6px 0;
+	padding: 0 6px;
+}
+input {
+	width: 50%;
+}
+textarea {
+	min-width: 50%;
+	height: 80px;
 }
