@@ -12,9 +12,9 @@
   {% endif %}
 </div>
 <form method="POST" action="{{ site.staticman-url }}">
-	<input name="options[redirect]" type="hidden" value="{{ site.url }}/{{ page.language }}/">
-	<input name="options[slug]" type="hidden" value="index">
-	<p><label>{{ site.comments-name[page.language] }}<br><input name="fields[name]" type="text"></label></p>
-	<p><label>{{ site.comments-message[page.language] }}<br><textarea name="fields[message]"></textarea></label></p>
-	<p><button type="submit">{{ site.comments-send[page.language] }}</button></p>
+<input name="options[redirect]" type="hidden" value="{{ site.url }}/{{ page.language }}/">
+<input name="options[slug]" type="hidden" value="index">
+<p><label>{{ site.comments-name[page.language] }}<br><input name="fields[name]" type="text"></label></p>
+<p><label>{{ site.comments-message[page.language] }}<br><textarea name="fields[message]"></textarea></label></p>
+<p><button type="submit">{{ site.comments-send[page.language] }}</button></p>
 </form>
