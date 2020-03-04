@@ -38,12 +38,12 @@ say /helpoff | Disable HUD Help message
 
 ## How to use powers?
 
-<span style="color: darkblue">Passive powers</span> are used automatically. To use <span style="color: green">active powers</span> you have to bind a key to +power#. In order to bind a key, you must open your console and use the bind command: bind "key" "command". In this case, the command is "+power#". Here are some examples:
+<span class="passive-power">Passive powers</span> are used automatically. To use <span class="active-power">active powers</span> you have to bind a key to +power#. In order to bind a key, you must open your console and use the bind command: bind "key" "command". In this case, the command is "+power#". Here are some examples:
 
 - bind f +power1
 - bind mouse3 +power2
 
-You can have only up to 3 <span style="color: green">active powers</span>. You can have 10 superpowers in total (you get one slot each level).
+You can have only up to 3 <span class="active-power">active powers</span>. You can have 10 superpowers in total (you get one slot each level).
 
 ## List of powers
 

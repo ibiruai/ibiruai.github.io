@@ -35,17 +35,20 @@ h3 {
 p, ul {
 	margin: 6px 0;
 }
-a {
-	color: grey;
+a, .comment-date, .property {
+	color: #666;
+}
+.active-power {
+	color: green;
+}
+.passive-power {
+	color: darkblue;
 }
 .languages {
 	text-align: right;
 }
 .comment-name {
 	font-weight: bold;
-}
-.comment-date {
-	color: grey;
 }
 .comment {
 	border: 1px solid darkgrey;

@@ -1,9 +1,9 @@
 {% for power in site.data.herolist[page.language] %}
 <h3 id="{{ power.name | slugify }}">{{ power.name }} - {{ power.description1 }}</h3>
 
-<p>{% if power.active %}<span style="color: green">{{ site[page.language].active_power }}{% else %}<span style="color: darkblue">{{ site[page.language].passive_power }}{% endif %}:</span> {{ power.description2 }}</p>
+<p>{% if power.active %}<span class="active-power">{{ site[page.language].active_power }}{% else %}<span class="passive-power">{{ site[page.language].passive_power }}{% endif %}:</span> {{ power.description2 }}</p>
 {% for property in power.properties %}
-<p><span style="color: grey">{{ property.pname }}</span>: {{ property.pdesc }}</p>
+<p><span class="property">{{ property.pname }}</span>: {{ property.pdesc }}</p>
 {% endfor %}
 {% if power.commentary %}
 <p><em>{{ power.commentary }}</em></p>{% endif %}
