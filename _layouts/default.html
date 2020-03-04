@@ -2,14 +2,13 @@
 <html lang="{{ page.language }}">
 <head>
 <meta charset="UTF-8">
-<title>{{ page.title }}</title>
-<meta name="description" content="{{ site.description[page.language] }}">
+<title>{{ page.title }}{% if page.title %} - {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ site[page.language].description }}">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <div id="wrapper">
-
 {{ content }}
 </div>
 </body>

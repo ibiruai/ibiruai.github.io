@@ -1,20 +1,25 @@
-<h2>{{ site.comments[page.language] }}</h2><hr>
 <div id="comments">
-  {% if site.data.comments["index"] %}
-	{% assign comments = site.data.comments["index"] | sort %}
-	{% for comment in comments %}
+	{% for comment in site.data.comments | sort %}
 	<div class="comment">
+	
 		<p><span class="comment-name">{{ comment[1].name }}</span>
-		<span class="comment-date">{{ comment[1].date | date: "%-d.%m.%Y %T" }}</span></p>
-		<p class="comment-message">{{ comment[1].message | strip_html }}</p>
+		
+		<span class="comment-date">{{ comment[1].date | date: "%d.%m.%Y %T" }}</span></p>
+		
+		{{ comment[1].message | markdownify }}
+		
 	</div>
 	{% endfor %}
-  {% endif %}
 </div>
+
 <form method="POST" action="{{ site.staticman-url }}">
-<input name="options[redirect]" type="hidden" value="{{ site.url }}/{{ page.language }}/">
-<input name="options[slug]" type="hidden" value="index">
-<p><label>{{ site.comments-name[page.language] }}<br><input name="fields[name]" type="text"></label></p>
-<p><label>{{ site.comments-message[page.language] }}<br><textarea name="fields[message]"></textarea></label></p>
-<p><button type="submit">{{ site.comments-send[page.language] }}</button></p>
+
+<input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
+
+<p>{{ site[page.language].comments-name }}<br><input name="fields[name]" type="text"></p>
+
+<p>{{ site[page.language].comments-message }}<br><textarea name="fields[message]"></textarea></p>
+
+<p><button type="submit">{{ site[page.language].comments-send }}</button></p>
+
 </form>
