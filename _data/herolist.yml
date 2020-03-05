@@ -56,7 +56,7 @@ en:
 - name: Human Torch
   description1: Flame Blast
   description2: Ignite your enemies on fire with a Flame Blast.
-  active: 1
+  active: true
   properties:
   - pname: Cost
     pdesc: 3 AP
@@ -67,7 +67,7 @@ en:
 - name: Iron Man
   description1: Rocket Pack
   description2: Rocket Jetpack - use +power key to take off.
-  active: 1
+  active: true
   properties:
   - pname: Cost per second
     pdesc: 1 AP
@@ -78,7 +78,7 @@ en:
 - name: Shadowcat
   description1: Walk Through Walls
   description2: Can Walk Through Walls for Short Time - GET STUCK AND YOU'LL BE AUTO-SLAIN!
-  active: 1
+  active: true
   properties:
   - pname: Noclip time
     pdesc: 6 seconds
@@ -87,11 +87,11 @@ en:
 - name: Spider-Man
   description1: Web Swing
   description2: Shoot Web to Swing - Jump Reels In, Duck Reels Out.
-  active: 1
+  active: true
 - name: Mystique
   description1: Morph into Enemy
   description2: Press the +power key to shapeshift into the Enemy.
-  active: 1
+  active: true
 - name: Freeman
   description1: Long Jump Module
   description2: Get Crowbar and Long Jump Module.
@@ -130,7 +130,7 @@ en:
 - name: Snake
   description1: Health Rations
   description2: Health Rations on +power key use.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 3
@@ -141,7 +141,7 @@ en:
 - name: Demolition Man
   description1: Tripmines
   description2: Unlimited Tripmines - Limited ammount that can be planted at once.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 3
@@ -170,7 +170,7 @@ en:
 - name: Blink
   description1: Teleportation
   description2: Teleport to where you are currently aiming at.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 4
@@ -218,7 +218,7 @@ en:
 - name: Bass
   description1: Uber Energy Beam
   description2: Press the +power key to fire your beam cannon.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 5
@@ -239,7 +239,7 @@ en:
 - name: Electro
   description1: Chain Lightning
   description2: Powerful Lightning Attack that can hurt Multiple Enemies.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 6
@@ -250,7 +250,7 @@ en:
 - name: Jubilee
   description1: Pink Shades
   description2: Use Shades for protection from bright flashes.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 6
@@ -263,7 +263,7 @@ en:
 - name: Scorpion
   description1: Get Over Here!
   description2: Hold +power key to Harpoon and Drag opponents to you.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 7
@@ -274,7 +274,7 @@ en:
 - name: Bomberman
   description1: Toy Bombs
   description2: Press +power button to plant a toy bomb.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 7
@@ -307,7 +307,7 @@ en:
 - name: Bishop
   description1: Absorb Energy
   description2: Absorb Damage and use it with your weapons! Or release all energy to deal even more damage.
-  active: 1
+  active: true
   properties:
   - pname: Required level
     pdesc: 10
@@ -374,7 +374,7 @@ ru:
 - name: Human Torch
   description1: Поток пламени
   description2: Поджигайте своих врагов.
-  active: 1
+  active: true
   properties:
   - pname: Стоимость выстрела
     pdesc: 3 AP
@@ -385,7 +385,7 @@ ru:
 - name: Iron Man
   description1: Реактивный ранец
   description2: Используйте +power# клавишу, чтобы взлететь.
-  active: 1
+  active: true
   properties:
   - pname: Стоимость полёта в секунду
     pdesc: 1 AP
@@ -396,7 +396,7 @@ ru:
 - name: Shadowcat
   description1: Прохождение сквозь стены
   description2: Вы можете ходить сквозь стены - Вы умрёте, если застрянете в стене.
-  active: 1
+  active: true
   properties:
   - pname: Время действия
     pdesc: 6 сек
@@ -405,11 +405,11 @@ ru:
 - name: Spider-Man
   description1: Раскачивание на паутине
   description2: Выстреливайте паутиной и раскачивайтесь - Контролируйте длину, прыгая и приседая.
-  active: 1
+  active: true
 - name: Mystique
   description1: Перевоплощение
   description2: Нажмите +power# клавишу, чтобы замаскироваться под противника.
-  active: 1
+  active: true
 - name: Freeman
   description1: Длинные прыжки
   description2: Получите лом и модуль длинных прыжков.
@@ -448,7 +448,7 @@ ru:
 - name: Snake
   description1: Лечебный паёк
   description2: Лечебные пайки на +power# клавишу.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 3
@@ -459,7 +459,7 @@ ru:
 - name: Demolition Man
   description1: Мины-ловушки
   description2: Бесконечные мины - Количество мин, устанавливаемых одновременно, ограничено.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 3
@@ -488,7 +488,7 @@ ru:
 - name: Blink
   description1: Телепортация
   description2: Вы телепорируетесь в направлении своего взгляда.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 4
@@ -536,7 +536,7 @@ ru:
 - name: Bass
   description1: Мощный луч энергии
   description2: Нажмите +power# клавишу, чтобы выстрелить из лазерной пушки.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 5
@@ -557,7 +557,7 @@ ru:
 - name: Electro
   description1: Цепь молний
   description2: Мощная атака молниями, наносящая урон нескольким целям.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 6
@@ -568,7 +568,7 @@ ru:
 - name: Jubilee
   description1: Солнцезащитные очки
   description2: Используйте солнцезащитные очки, чтобы защититься от ярких вспышек.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 6
@@ -581,7 +581,7 @@ ru:
 - name: Scorpion
   description1: Get Over Here!
   description2: Удерживайте +power# клавишу, чтобы выстреливать гарпуном и подтягивать им к себе противников.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 7
@@ -592,7 +592,7 @@ ru:
 - name: Bomberman
   description1: Игрушечные бомбы
   description2: Нажмите +power# кнопку, чтобы установить игрушечную бомбу.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 7
@@ -625,7 +625,7 @@ ru:
 - name: Bishop
   description1: Поглощение энергии
   description2: Впитывайте урон и используйте его с вашими пушками! Или высвободите всю энергию во врага.
-  active: 1
+  active: true
   properties:
   - pname: Требуемый уровень
     pdesc: 10

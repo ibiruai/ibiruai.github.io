@@ -1,18 +1,7 @@
 ---
 layout: default
 language: en
+url-to-redirect-to:
+  ru: "../ru/help/"
+  en: "../en/help/"
 ---
-
-<script>
-var language = window.navigator.userLanguage || window.navigator.language;
-if (language.indexOf('ru') > -1) {
-	document.location.href = '../ru/help/';
-} else {
-	document.location.href = '../en/help/';
-}
-</script>
-<noscript>
-<meta http-equiv="refresh" content="0; ../en/help/">
-<p><a href="../en/help/">In English</a></p>
-<p><a href="../ru/help/">На русском языке</a></p>
-</noscript>

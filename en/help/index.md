@@ -4,8 +4,7 @@ title: SuperHero Mod Help
 language: en
 ---
 
-English \| [Русский](../../ru/help/)
-{: .languages}
+{% include languages.html %}
 
 # SuperHero Mod Help
 
@@ -25,7 +24,7 @@ Press \[ **I** \] or say **/shmenu** to open the main menu. Most of things below
 
 say /help | This help page
 say /showmenu | Displays Select Super Power menu
-say /herolist | Lets you see [a list of heroes and powers](#list-of-powers) (you can also use "herolist" in the console)
+say /herolist | Lets you see [a list of heroes and powers](#list-of-powers) (you can also use \"herolist\" in the console)
 say /myheroes | Displays your heroes
 say /clearpowers | Clears ALL powers
 say /drop \<hero\> | Drop one power so you can pick another
@@ -38,7 +37,7 @@ say /helpoff | Disable HUD Help message
 
 ## How to use powers?
 
-<span class="passive-power">Passive powers</span> are used automatically. To use <span class="active-power">active powers</span> you have to bind a key to +power#. In order to bind a key, you must open your console and use the bind command: bind "key" "command". In this case, the command is "+power#". Here are some examples:
+<span class="passive-power">Passive powers</span> are used automatically. To use <span class="active-power">active powers</span> you have to bind a key to +power#. In order to bind a key, you must open your console and use the bind command: bind \"key\" \"command\". In this case, the command is \"+power#\". Here are some examples:
 
 - bind f +power1
 - bind mouse3 +power2

@@ -3,8 +3,7 @@ layout: default
 language: ru
 ---
 
-[English](../en/) \| Русский
-{: .languages}
+{% include languages.html %}
 
 {% include logo.html %}
 
