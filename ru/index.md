@@ -11,9 +11,11 @@ Evileye.eu.org SuperHero Server — CS 1.6 сервер с SuperHero модом.
 
 Адрес сервера: **95.142.47.100:27015**
 
-Чтобы зайти на сервер, введите **connect 95.142.47.100:27015** в консоли игры или [присоединитесь через Steam](steam://connect/95.142.47.100:27015).
+Для входа введите **connect 95.142.47.100:27015** в консоли игры или [присоединитесь через Steam](steam://connect/95.142.47.100:27015).
 
-Зарабатывайте очки опыта за убийства оппонентов и поднимайтесь в уровне. С каждым уровнем вы сможете выбрать новую способность. Проверьте [Информацию о моде](help), чтобы узнать больше о моде и о способностях.
+Получайте опыт за убийство противников и поднимайтесь в уровне. С каждым уровнем вы сможете выбрать новую способность. Прочитайте [Информацию о моде](help), чтобы узнать больше.
+
+GitHub: <https://github.com/ibiruai/cstrike-superhero-server>
 
 ## Новости
 
@@ -23,15 +25,7 @@ Evileye.eu.org SuperHero Server — CS 1.6 сервер с SuperHero модом.
 
 ## Состояние сервера
 
-[![](https://cache.gametracker.com/server_info/95.142.47.100:27015/b_560_95_1.png)](https://www.gametracker.com/server_info/95.142.47.100:27015/)
-
-## Ссылки
-
-[Git репозиторий сервера](https://github.com/ibiruai/cstrike-superhero-server)
-
-[Список Counter-Strike 1.6 и Counter-Strike: Condition Zero серверов с SuperHero Mod](https://www.gametracker.com/search/?search_by=server_variable&search_by2=superheromod_version)
-
-[SuperHero Mod подфорум на Alliedmods.net](https://forums.alliedmods.net/forumdisplay.php?f=30)
+[![](https://cache.gametracker.com/server_info/95.142.47.100:27015/b_560_95_1.png)](https://www.gametracker.com/server_info/95.142.47.100:27015/){: .gametracker }
 
 ## Комментарии
 
