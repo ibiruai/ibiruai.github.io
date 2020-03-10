@@ -271,6 +271,15 @@ en:
     pdesc: 15
   - pname: Required time for victim to escape
     pdesc: 6 seconds
+- name: Ainz Ooal Gown
+  description1: Resurrection Wand
+  description2: Use Resurrection Wand to revive players
+  active: true
+  properties:
+  - pname: Required level
+    pdesc: 7
+  - pname: Cost
+    pdesc: $1500
 - name: Bomberman
   description1: Toy Bombs
   description2: Press +power button to plant a toy bomb.
@@ -589,6 +598,15 @@ ru:
     pdesc: 15
   - pname: Время, требуемое жертве на побег
     pdesc: 6 сек
+- name: Ainz Ooal Gown
+  description1: Палочка воскрешения
+  description2: Воскрешайте игроков Палочкой воскрешения
+  active: true
+  properties:
+  - pname: Требуемый уровень
+    pdesc: 7
+  - pname: Стоимость
+    pdesc: $1500
 - name: Bomberman
   description1: Игрушечные бомбы
   description2: Нажмите +power# кнопку, чтобы установить игрушечную бомбу.

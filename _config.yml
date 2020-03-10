@@ -6,8 +6,12 @@ en:
   comments-name: Name
   comments-message: Message
   comments-send: Send
+  active-power: Active power
+  passive-power: Passive power
 ru:
   description: Сервер Counter-Strike 1.6 с SuperHero модом. Зарабатывайте очки опыта за убийства оппонентов, поднимайтесь в уровне и выбирайте способности.
   comments-name: Имя
   comments-message: Сообщение
   comments-send: Отправить
+  active-power: Активная способность
+  passive-power: Пассивная способность
