@@ -1,29 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
-	<meta charset="UTF-8">
-	<meta name="description" content="This is Counter-Strike 1.6 server with SuperHero mod. Kill your opponents to gain XP and level up. Every level you'll be able to pick a new superpower.">
-	<title>Evileye.eu.org SuperHero Server</title>
-	
-	<script>
-	  document.location.href = '/cstrike-superhero-server/index.html';
-	</script>
-	
-	<noscript>
-		<meta http-equiv="refresh" content="0; url=/cstrike-superhero-server/index.html">
-	</noscript>
-	
-</head>
-<body>
-
-<div id="wrapper">
-
-<noscript>
-	<p><a href="/cstrike-superhero-server/index.html">Перейти</a></p>
-</noscript>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ibiruai's page</title>
+<style>
+body {
+  font: 14pt Segoe UI, sans-serif;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 28px
+}
+[type="checkbox"],
+[type="checkbox"]:checked ~ [lang="en"],
+[type="checkbox"]:not(:checked) ~ [lang="ru"] {
+  display: none
+}
+label {
+  padding: 8px;
+  border: 1px solid #ccc;
+  user-select: none
+}
+label + label {
+  border-left: none
+}
+[type="checkbox"]:checked + p > label:last-child,
+[type="checkbox"]:not(:checked) + p > label:first-child {
+  background: #eee;
+  pointer-events: none
+}
+</style>
+<input type="checkbox" id="toggle_language">
+<p><label for="toggle_language">In English</label><label for="toggle_language">На русском</label></p>
+<script>document.getElementById('toggle_language').checked = window.navigator.language.indexOf('ru') > -1</script>
+<div lang="en">
+<p><b>EVILEYE # SUPERHERO # SENTRY</b> was a Counter-Strike&nbsp;1.6 server with
+<a href="https://forums.alliedmods.net/forumdisplay.php?f=30">SuperHero Mod</a>
+and Sentry Guns.
+Launched 2&nbsp;February&nbsp;2019, it worked until 2&nbsp;May&nbsp;2021.
+Its distinguishing features were Russian translation,
+display of cooldowns,
+the mod menu to replace chat commands,
+the auto-generated MOTD with powers descriptions,
+new powers ported from other plugins,
+bots being able to use active powers.
+<p><a href="Server_files.zip">Download server files (2.7 MB)</a>
+<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=superheromod_version">
+Search other SuperHero Mod servers</a>
+<p><b>Skills Mod</b> is a mod based on SuperHero Mod.
+The goal was to make it easier to get started
+and to prevent players from becoming overpowered
+by not implementing XP and levels and the need to bind keys.
+<p><a href="Skills_Mod.zip">Download Skills Mod (16 KB)</a>
+<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=skillsmod_version">
+Search Skills Mod servers</a>
+<p>I'm not into online games anymore,
+but please write to <a href="mailto:qh663&#64;yandex.ru">qh663&#64;yandex.ru</a> if you want to get in touch.
 </div>
-
-</body>
+<div lang="ru">
+<p><b>EVILEYE # SUPERHERO # SENTRY</b> был сервером Counter-Strike&nbsp;1.6 с
+<a href="https://forums.alliedmods.net/forumdisplay.php?f=30">SuperHero Mod</a>
+и Sentry Guns.
+Запущенный 2&nbsp;февраля&nbsp;2019, продолжил работу до 2&nbsp;мая&nbsp;2021.
+Его отличали русский перевод,
+отображение откатов способностей,
+заменяющее команды чата меню,
+автогенерируемый MOTD с описанием способностей,
+новые портированные из других плагинов способности,
+использование ботами активных способностей.
+<p><a href="Server_files.zip">Скачать файлы сервера (2,7 МБ)</a>
+<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=superheromod_version">
+Найти другие SuperHero Mod серверы</a>
+<p><b>Skills Mod</b> — мод, основанный на SuperHero Mod.
+Задачей было облегчить понимание мода и снизить разницу в возможностях между игроками,
+убрав опыт и уровни и необходимость биндить клавиши.
+<p><a href="Skills_Mod.zip">Скачать Skills Mod (16 КБ)</a>
+<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=skillsmod_version">
+Найти Skills Mod серверы</a>
+<p>Меня больше не интересуют онлайн игры,
+но, пожалуйста, пишите на <a href="mailto:qh663&#64;yandex.ru">qh663&#64;yandex.ru</a>,
+если хотите со мной связаться.
+</div>
 </html>
