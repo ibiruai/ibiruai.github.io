@@ -8,7 +8,10 @@ body {
   font: 14pt Segoe UI, sans-serif;
   line-height: 1.5;
   max-width: 900px;
-  margin: 28px
+  margin: 14px
+}
+p, a, label {
+  color: Indigo
 }
 [type="checkbox"],
 [type="checkbox"]:checked ~ [lang="en"],
@@ -16,21 +19,31 @@ body {
   display: none
 }
 label {
-  padding: 8px;
-  border: 1px solid #ccc;
-  user-select: none
+  padding: 7px 14px;
+  display: inline-block;
+  opacity: .6
 }
-label + label {
-  border-left: none
+[type="checkbox"]:checked + label + label,
+[type="checkbox"]:not(:checked) + label {
+  background: Thistle;
+  box-shadow: 10px 10px 20px Thistle;
+  pointer-events: none;
+  opacity: 1
 }
-[type="checkbox"]:checked + p > label:last-child,
-[type="checkbox"]:not(:checked) + p > label:first-child {
-  background: #eee;
-  pointer-events: none
+div {
+  background: Thistle;
+  box-shadow: 10px 10px 20px Thistle;
+  padding: 14px
+}
+p:first-child {
+  margin-top: 0
+}
+p:last-child {
+  margin-bottom: 0
 }
 </style>
 <input type="checkbox" id="toggle_language">
-<p><label for="toggle_language">In English</label><label for="toggle_language">На русском</label></p>
+<label for="toggle_language">In English</label><label for="toggle_language"> На русском</label>
 <script>document.getElementById('toggle_language').checked = window.navigator.language.indexOf('ru') > -1</script>
 <div lang="en">
 <p><b>EVILEYE # SUPERHERO # SENTRY</b> was a Counter-Strike&nbsp;1.6 server with
