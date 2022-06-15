@@ -4,93 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ibiruai's page</title>
 <style>
-body {
-  font: 14pt Segoe UI, sans-serif;
-  line-height: 1.5;
-  max-width: 900px;
-  margin: 14px
-}
-p, a, label {
-  color: Indigo
-}
-[type="checkbox"],
-[type="checkbox"]:checked ~ [lang="en"],
-[type="checkbox"]:not(:checked) ~ [lang="ru"] {
-  display: none
-}
-label {
-  padding: 7px 14px;
-  display: inline-block;
-  opacity: .6
-}
-[type="checkbox"]:checked + label + label,
-[type="checkbox"]:not(:checked) + label {
-  background: Thistle;
-  box-shadow: 10px 10px 20px Thistle;
-  pointer-events: none;
-  opacity: 1
-}
-div {
-  background: Thistle;
-  box-shadow: 10px 10px 20px Thistle;
-  padding: 14px
-}
-p:first-child {
-  margin-top: 0
-}
-p:last-child {
-  margin-bottom: 0
+body{
+  font: 12pt "DejaVu Serif", serif;
+  background: url("data:image/png;base64,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") repeat fixed;
+  transform: rotate(-3deg);
+  margin: 7.5%
 }
 </style>
-<input type="checkbox" id="toggle_language">
-<label for="toggle_language">In English</label><label for="toggle_language"> На русском</label>
-<script>document.getElementById('toggle_language').checked = window.navigator.language.indexOf('ru') > -1</script>
-<div lang="en">
-<p><b>EVILEYE # SUPERHERO # SENTRY</b> was a Counter-Strike&nbsp;1.6 server with
-<a href="https://forums.alliedmods.net/forumdisplay.php?f=30">SuperHero Mod</a>
-and Sentry Guns.
-Launched 2&nbsp;February&nbsp;2019, it worked until 2&nbsp;May&nbsp;2021.
-Its distinguishing features were Russian translation,
-display of cooldowns,
-the mod menu to replace chat commands,
-the auto-generated MOTD with powers descriptions,
-new powers ported from other plugins,
-bots being able to use active powers.
-<p><a href="Server_files.zip">Download server files (2.7 MB)</a>
-<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=superheromod_version">
-Search other SuperHero Mod servers</a>
-<p><b>Skills Mod</b> is a mod based on SuperHero Mod.
-The goal was to make it easier to get started
-and to prevent players from becoming overpowered
-by not implementing XP and levels and the need to bind keys.
-<p><a href="Skills_Mod.zip">Download Skills Mod (16 KB)</a>
-<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=skillsmod_version">
-Search Skills Mod servers</a>
-<p>I'm not into online games anymore,
-but please write to <a href="mailto:qh663&#64;yandex.ru">qh663&#64;yandex.ru</a> if you want to get in touch.
-</div>
-<div lang="ru">
-<p><b>EVILEYE # SUPERHERO # SENTRY</b> был сервером Counter-Strike&nbsp;1.6 с
-<a href="https://forums.alliedmods.net/forumdisplay.php?f=30">SuperHero Mod</a>
-и Sentry Guns.
-Запущенный 2&nbsp;февраля&nbsp;2019, продолжил работу до 2&nbsp;мая&nbsp;2021.
-Его отличали русский перевод,
-отображение откатов способностей,
-заменяющее команды чата меню,
-автогенерируемый MOTD с описанием способностей,
-новые портированные из других плагинов способности,
-использование ботами активных способностей.
-<p><a href="Server_files.zip">Скачать файлы сервера (2,7 МБ)</a>
-<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=superheromod_version">
-Найти другие SuperHero Mod серверы</a>
-<p><b>Skills Mod</b> — мод, основанный на SuperHero Mod.
-Задачей было облегчить понимание мода и снизить разницу в возможностях между игроками,
-убрав опыт и уровни и необходимость биндить клавиши.
-<p><a href="Skills_Mod.zip">Скачать Skills Mod (16 КБ)</a>
-<p><a href="https://www.gametracker.com/search/?search_by=server_variable&search_by2=skillsmod_version">
-Найти Skills Mod серверы</a>
-<p>Меня больше не интересуют онлайн игры,
-но, пожалуйста, пишите на <a href="mailto:qh663&#64;yandex.ru">qh663&#64;yandex.ru</a>,
-если хотите со мной связаться.
-</div>
+<h1>ibiruai</h1>
+<h2>2022</h2>
+<h2>2021</h2>
+<h2>2020</h2>
+<h2>2019</h2>
+<p><a href=counter-strike/index.html>Counter-Strike 1.6</a>
+<h2>2018</h2>
 </html>
