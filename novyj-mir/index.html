@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карта Континента</title>
+<style>
+#map {
+  background: #0ff;
+  position: relative;
+}
+#continent {
+  margin: 12.5% 5%;
+  width: 90%;
+  height: 80%;
+  border-radius: 50%;
+  background: #0f0;
+  position: relative;
+  box-shadow: 5px 5px 5px #0f0;
+}
+#mountains * {
+  width: 20%;
+  height: 40%;
+  position: absolute;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 41.7 26.6' fill='%2348373e'%3E%3Cpath d='M5.3 18.1c3-5.1 6.5-9.4 9.6-13.9-.6.9-1.5-.9.3 1.5 2.2 3.5 4.2 7.2 6.5 10.8 1.5 2.4 3.1 4.6 4.7 7l4.9-2.9-4.9-6.8c-2.3-3.5-4.3-7.2-6.4-10.8-.1-.2-1.8-2.9-2.1-2.8-3.2 1.1-5 1.6-6.5 3.9-1.8 2.8-3.7 5.6-5.7 8.3l-5.9 8.3 5.3-2.4z'/%3E%3Cpath d='M17.4 20.3c2.2-2.4 4.7-4.4 7.2-6.5 3.5-3 9.8-6.8 2.2-2.3.5-.1.9-.3 1.4-.2 1.2.3 2.3 2.4 2.9 3.3 1.6 2.7 3.1 5.6 4.3 8.5.5 1.1.8 2.3 1.2 3.5l5.1-2.8-1.4-3.4c-1.3-3-2.8-5.8-4.4-8.6-.7-1.2-1.7-3.2-3.0-3.9-.7-.3-1-.1-1.6-.0-4.4 2.2-8.2 4.9-11.9 8-2.6 2.1-5.1 4.3-7.5 6.7l5.4-2.2z'/%3E%3C/svg%3E") no-repeat;
+}
+#mountains :nth-child(1) {
+  top: 45%;
+  left: 5%
+}
+#mountains :nth-child(2) {
+  top: 45%;
+  left: 30%
+}
+#mountains :nth-child(3) {
+  top: 47%;
+  left: 55%
+}
+#mountains :nth-child(4) {
+  top: 43%;
+  left: 75%
+}
+#description {
+  background: #333;
+  color: #ccc;
+  font: 16px Dejavu Sans, sans-serif;
+}
+#description :first-child {
+  padding-top: 2px;
+}
+#description > * {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+#places {
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+}
+#places p {
+  width: 3.5%;
+  height: 2.47%;
+  border-radius: 50%;
+  margin: .17% .25%;
+  float: left;
+  background-color: rgba(119, 119, 119, 0.1);
+}
+#places p:hover {
+  background-color: rgba(119, 119, 119, 0.6)
+}
+#places p:after {
+  display: inline-flex;
+  content: '';
+  height: 120%;
+  width: 120%;
+  margin: -10% -10%;
+}
+#map, #description {
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+body {
+  background: #333;
+  margin: 0;
+}
+#map, #description, #places {
+  height: calc(100vw * 1.41);
+  width: 100%;
+}
+@media screen and (min-aspect-ratio: 1/1) and (min-width: 600px) {
+body{
+  background: #444;
+  max-width: 100vw;
+  margin: calc(100vh / 2 - 70.7vw / 2) 0;
+  box-shadow: 10px 10px 20px #333;
+  overflow: hidden;
+}
+#map, #description, #places {
+  height: 70.7vw;
+  width: 50vw;
+}
+#description {
+  overflow-y: auto;
+}
+}
+@media screen and (min-aspect-ratio: 7/5) and (min-width: 600px) {
+body{
+  max-width: 140vh;
+  margin: 0 auto;
+}
+#map, #description, #places {
+  height: 100vh;
+  width: 70vh;
+}
+}
+a {
+  color: #0ff
+}
+</style>
+<div id="map">
+<div id="continent">
+<div id="mountains"><p><p><p><p></div>
+</div>
+<div id="places">
+<script>
+places = {
+  "693": ["thistle", "<h2>Сухое дерево</h2><p>Последний раз это гигантское дерево пышело жизнью столетья назад. Никто из ныне живущих не видел его в живом виде, но это, должно быть, было прекрасное зрелище."],
+  "803": ["thistle", "<h2>Затонувший корабль</h2><p>Никто не знает, с каких пор этот корабль лежит на дне моря. Повреждения позволяют сказать, что корабль был потоплен в ходе морского боя, но ни обстоятельства того боя, ни название корабля, ни название страны того корабля никому из живущих не известны."]
+}
+for (i = 1; i <= 925; i++)
+  if (!places[i])
+    document.write("<p onclick=create(" + i + ")>")
+  else
+    document.write("<p style='background: " + places[i][0] + " !important' title=\"" + places[i][1].match(/^<h2>(.*)<\/h2>/g).join().slice(4,-5) + "\" onclick=view(" + i + ")>")
+</script>
+</div>
+</div><div id="description"></div>
+<script>
+welcomeMessage = "<h2>Карта Континента</h2><p>На этой карте собраны сведения о населённых пунктах, примечательных строениях, иных объектах, располагающихся на Континенте."
+let old_place
+desc = document.getElementById("description")
+desc.innerHTML = welcomeMessage
+function create(i) {
+  desc.innerHTML = "<h2>Участок №" + i + "</h2><p>Мы не знаем, что здесь находится. Хотите дополнить карту сведениями о населённом пункте, строении или ином объекте на этом участке?<p><a href='mailto&#58;qh663+map&#64;yandex&#46;ru?subject=Участок " + i + "'>Дополнить карту</a>"
+  pressed(i)
+}
+function view(i) {
+  desc.innerHTML = places[i][1]
+  pressed(i)
+}
+function pressed(i) {
+  if (old_place) {
+    if (old_place.style.backgroundColor == "rgba(119, 119, 119, 0.6)")
+      old_place.style.backgroundColor = ""
+    old_place.style.boxShadow = ""
+  }
+  place = document.querySelector("#places :nth-child(" + (i + 1) + ")")
+  if (place == old_place) {
+    desc.innerHTML = welcomeMessage
+    old_place = undefined
+    return
+  }
+  if (!place.style.backgroundColor)
+    place.style.backgroundColor = "rgba(119, 119, 119, 0.6)"
+  place.style.boxShadow = "0 0 5px 1px " + place.style.backgroundColor
+  old_place = place
+}
+</script>
+</html>
