@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Загрузка...</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="page-title">Загрузка...</h1>
+    <select id="file-selector"></select>
+    <button class="toggle-theme" onclick="toggleTheme()">🌓</button>
+  </header>
+  <main id="content">Загрузка данных...</main>
+
+  <script src="js/js-yaml.min.js"></script>
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    const defaultTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', defaultTheme);
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const newTheme = current === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    async function fetchIndex() {
+      const res = await fetch('./config.yaml');
+      const text = await res.text();
+      return jsyaml.load(text);
+    }
+
+    async function loadYAMLFile(filename) {
+        const res = await fetch(filename);
+        const text = await res.text();
+        return jsyaml.load(text, { schema: jsyaml.FAILSAFE_SCHEMA });
+    }
+
+    function renderItem(item) {
+      const div = document.createElement('div');
+      div.className = 'item';
+
+      if (item['название']) {
+        const title = document.createElement('div');
+        title.className = 'item-title';
+        title.textContent = item['название'];
+        div.appendChild(title);
+      }
+
+      for (const key in item) {
+        if (key === 'название') continue;
+        const field = document.createElement('div');
+        field.className = 'field';
+        field.innerHTML = `<strong>${key.replace(/_/g, ' ')}:</strong> ${item[key]}`;
+        div.appendChild(field);
+      }
+
+      return div;
+    }
+
+    function renderPage(data) {
+      const main = document.getElementById('content');
+      main.innerHTML = '';
+
+      for (const key in data) {
+        if (key === 'title') continue;
+        const section = data[key];
+        if (Array.isArray(section)) {
+          section.forEach(item => {
+            main.appendChild(renderItem(item));
+          });
+        }
+      }
+    }
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
+    }
+
+    async function init() {
+      try {
+        const index = await fetchIndex();
+        const select = document.getElementById('file-selector');
+        const fileMap = {};
+
+        index.files.forEach(entry => {
+          const file = typeof entry === 'string' ? entry : entry.file;
+          const title = typeof entry === 'string' ? file.replace(/\.yaml$/, '') : entry.title || file;
+          fileMap[file] = title;
+
+          const option = document.createElement('option');
+          option.value = file;
+          option.textContent = title;
+          select.appendChild(option);
+        });
+
+        async function loadSelectedFile() {
+          const filename = select.value;
+          const data = await loadYAMLFile(filename);
+
+          const title = fileMap[filename] || 'Список';
+          document.title = title;
+          document.getElementById('page-title').textContent = title;
+
+          renderPage(data);
+        }
+
+        select.addEventListener('change', loadSelectedFile);
+
+        if (index.files.length > 0) {
+          const firstFile = typeof index.files[0] === 'string' ? index.files[0] : index.files[0].file;
+          select.value = firstFile;
+          await loadSelectedFile();
+        }
+
+      } catch (err) {
+        document.getElementById('content').textContent = 'Ошибка загрузки config.yaml или одного из файлов: ' + err;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
