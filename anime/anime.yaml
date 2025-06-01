@@ -1,0 +1,2105 @@
+# Экспорт из MAL Начало
+default_type: TV
+anime:
+
+  - title: Ai to Yuuki no Pig Girl Tonde Buurin
+
+  - title: Akiba's Trip The Animation
+
+  - title: Bishoujo Senshi Sailor Moon Crystal
+    type: ONA
+
+  - title: Boku no Hero Academia
+
+  - title: Boku wa Tomodachi ga Sukunai
+
+  - title: Candy Candy
+
+  - title: Centaur no Nayami
+
+  - title: Choujigen Game Neptune The Animation
+
+  - title: 'Chu Feng: B.E.E'
+    type: ONA
+
+  - title: Comet Lucifer
+
+  - title: Dagashi Kashi
+
+  - title: Denpa-teki na Kanojo
+    type: OVA
+
+  - title: Divine Gate
+
+  - title: Ergo Proxy
+
+  - title: Flip Flappers
+
+  - title: Freezing
+
+  - title: Fukumenkei Noise
+
+  - title: Fushigi no Umi no Nadia
+
+  - title: 'Garo: Vanishing Line'
+
+  - title: Gin no Saji
+
+  - title: 'Ginga Eiyuu Densetsu: Die Neue These - Kaikou'
+
+  - title: Golden Time
+
+  - title: Higashi no Eden
+
+  - title: Houseki no Kuni
+
+  - title: Hyouka
+
+  - title: Inari, Konkon, Koi Iroha.
+
+  - title: Inazuma Eleven
+
+  - title: Itsuka Tenma no Kuro Usagi
+
+  - title: Jormungand
+
+  - title: Kannazuki no Miko
+
+  - title: 'Kara no Kyoukai Movie 1: Fukan Fuukei'
+    type: Movie
+
+  - title: Kimetsu no Yaiba
+
+  - title: Kimi ni Todoke
+
+  - title: Koukaku Kidoutai
+    type: Movie
+
+  - title: Kurozuka
+
+  - title: 'Last Period: Owarinaki Rasen no Monogatari'
+
+  - title: 'Log Horizon: Entaku Houkai'
+
+  - title: Masamune-kun no Revenge
+
+  - title: Masou Gakuen HxH
+
+  - title: Mawaru Penguindrum
+
+  - title: Mayo Chiki!
+
+  - title: Memories
+    type: Movie
+
+  - title: Mob Psycho 100
+
+  - title: Monster Strike The Animation
+    type: ONA
+
+  - title: 'Monster Strike the Movie: Lucifer - Zetsubou no Yoake'
+    type: Movie
+
+  - title: Occultic;Nine
+
+  - title: Qualidea Code
+
+  - title: Rokudenashi Majutsu Koushi to Akashic Records
+
+  - title: Sasami-san@Ganbaranai
+
+  - title: 'Seisen Cerberus: Ryuukoku no Fatalités'
+
+  - title: Sen to Chihiro no Kamikakushi
+    type: Movie
+
+  - title: Shinreigari
+
+  - title: Sousei no Onmyouji
+
+  - title: Soushin Shoujo Matoi
+
+  - title: Tate no Yuusha no Nariagari Season 2
+
+  - title: The God of High School
+
+  - title: World Trigger 2nd Season
+
+  - title: Zombieland Saga Revenge
+
+  - title: Naruto
+    score: 7
+    watched:
+    - start: 2012-00-00
+      end:   2013-00-00
+
+  - title: 'Naruto: Shippuuden'
+    score: 6
+    watched:
+    - start: 2013-00-00
+      end:   2013-00-00
+    dropped: true
+
+  - title: Kidou Tenshi Angelic Layer
+    score: 6
+    watched:
+    - start: 2014-04-17
+      end:   2014-05-07
+
+  - title: Zero no Tsukaima
+    score: 7
+    watched:
+    - start: 2014-10-16
+      end:   2014-10-17
+
+  - title: Zero no Tsukaima F
+    score: 6
+    watched:
+    - start: 2014-10-17
+      end:   2014-10-18
+
+  - title: 'Zero no Tsukaima: Futatsuki no Kishi'
+    score: 6
+    watched:
+    - start: 2014-10-18
+      end:   2014-10-21
+
+  - title: 'Zero no Tsukaima: Princesses no Rondo'
+    score: 6
+    watched:
+    - start: 2014-10-21
+      end:   2014-10-22
+
+  - title: Rosario to Vampire
+    score: 7
+    watched:
+    - start: 2014-10-25
+      end:   2014-10-26
+
+  - title: Rosario to Vampire Capu2
+    score: 6
+    watched:
+    - start: 2014-10-26
+      end:   2014-10-28
+
+  - title: Shakugan no Shana
+    score: 5
+    watched:
+    - start: 2014-10-29
+      end:   2014-11-03
+
+  - title: Fullmetal Alchemist
+    score: 7
+    watched:
+    - start: 2014-11-05
+      end:   2014-11-08
+
+  - title: 'Fullmetal Alchemist: The Conqueror of Shamballa'
+    score: 7
+    watched:
+    - start: 2014-11-08
+      end:   2014-11-08
+    type: Movie
+
+  - title: High School DxD
+    score: 6
+    watched:
+    - start: 2014-11-08
+      end:   2014-11-11
+
+  - title: High School DxD New
+    score: 5
+    watched:
+    - start: 2014-11-11
+      end:   2014-11-14
+
+  - title: Dakara Boku wa, H ga Dekinai.
+    score: 6
+    watched:
+    - start: 2014-11-15
+      end:   2014-11-19
+
+  - title: Mirai Nikki (TV)
+    score: 9
+    watched:
+    - start: 2014-12-01
+      end:   2014-12-04
+    favorite: true
+
+  - title: 'Mirai Nikki: Redial'
+    score: 6
+    watched:
+    - start: 2014-12-04
+      end:   2014-12-04
+    type: OVA
+
+  - title: Elfen Lied
+    score: 8
+    watched:
+    - start: 2014-12-07
+      end:   2014-12-09
+
+  - title: Ookami to Koushinryou
+    score: 6
+    watched:
+    - start: 2014-12-09
+      end:   2014-12-12
+
+  - title: Ookami to Koushinryou II
+    score: 6
+    watched:
+    - start: 2014-12-12
+      end:   2014-12-13
+
+  - title: B-gata H-kei
+    score: 6
+    watched:
+    - start: 2014-12-13
+      end:   2014-12-17
+
+  - title: ChäoS;HEAd
+    score: 8
+    watched:
+    - start: 2014-12-26
+      end:   2014-12-29
+
+  - title: Eve no Jikan (Movie)
+    score: 7
+    watched:
+    - start: 2014-12-29
+      end:   2014-12-29
+    type: Movie
+
+  - title: Sword Art Online
+    score: 8
+    watched:
+    - start: 2015-01-05
+      end:   2015-01-07
+
+  - title: Sword Art Online II
+    score: 7
+    watched:
+    - start: 2015-01-07
+      end:   2015-01-10
+
+  - title: Log Horizon
+    score: 8
+    watched:
+    - start: 2015-01-10
+      end:   2015-01-14
+    - start: 2021-04-26
+      end: 2021-05-03
+
+  - title: Log Horizon 2nd Season
+    score: 7
+    watched:
+    - start: 2015-01-14
+      end:   2015-03-29
+    - start: 2021-05-04
+
+  - title: Tokyo Ghoul
+    score: 8
+    watched:
+    - start: 2015-01-15
+      end:   2015-01-17
+
+  - title: Akame ga Kill!
+    score: 7
+    watched:
+    - start: 2015-01-17
+      end:   2015-01-20
+    characters:
+      - Esdeath
+
+  - title: Steins;Gate
+    score: 9
+    watched:
+    - start: 2015-01-21
+      end:   2015-01-23
+    characters:
+      - Kurisu Makise
+
+  - title: 'Cross Ange: Tenshi to Ryuu no Rondo'
+    score: 6
+    watched:
+    - start: 2015-01-24
+      end:   2015-03-31
+
+  - title: Bakemonogatari
+    watched:
+    - start: 2015-01-25
+
+  - title: Nisekoi
+    score: 6
+    watched:
+    - start: 2015-01-27
+      end:   2015-02-01
+
+  - title: Mekakucity Actors
+    score: 7
+    watched:
+    - start: 2015-02-00
+      end:   2015-02-00
+
+  - title: Utawarerumono
+    score: 7
+    watched:
+    - start: 2015-02-02
+      end:   2015-02-04
+
+  - title: Robotics;Notes
+    score: 5
+    watched:
+    - start: 2015-02-04
+      end:   2015-02-08
+
+  - title: DearS
+    score: 5
+    watched:
+    - start: 2015-02-10
+      end:   2015-02-11
+
+  - title: Accel World
+    score: 7
+    watched:
+    - start: 2015-02-12
+      end:   2015-02-14
+
+  - title: Ray The Animation
+    score: 5
+    watched:
+    - start: 2015-02-14
+      end:   2015-02-15
+
+  - title: 'C: The Money of Soul and Possibility Control'
+    score: 5
+    watched:
+    - start: 2015-02-16
+      end:   2015-02-19
+
+  - title: Denpa Onna to Seishun Otoko
+    score: 4
+    watched:
+    - start: 2015-02-20
+      end:   2015-02-24
+
+  - title: Tokyo Ghoul √A
+    score: 4
+    watched:
+    - start: 2015-02-28
+      end:   2015-03-29
+
+  - title: Monochrome Factor
+    score: 5
+    watched:
+    - start: 2015-03-11
+      end:   2015-03-16
+
+  - title: Tasogare Otome x Amnesia
+    score: 7
+    watched:
+    - start: 2015-03-18
+      end:   2015-03-21
+
+  - title: Mahou Sensou
+    score: 5
+    watched:
+    - start: 2015-03-23
+      end:   2015-03-27
+
+  - title: Mahouka Koukou no Rettousei
+    score: 6
+    watched:
+    - start: 2015-03-28
+      end:   2015-04-02
+
+  - title: Giniro no Kami no Agito
+    score: 5
+    watched:
+    - start: 2015-04-03
+      end:   2015-04-03
+    type: Movie
+
+  - title: No Game No Life
+    score: 6
+    watched:
+    - start: 2015-04-08
+      end:   2015-04-10
+
+  - title: Angel Beats!
+    score: 4
+    watched:
+    - start: 2015-04-10
+      end:   2015-04-11
+
+  - title: Gokukoku no Brynhildr
+    score: 8
+    watched:
+    - start: 2015-04-12
+      end:   2015-04-14
+
+  - title: Toki wo Kakeru Shoujo
+    score: 6
+    watched:
+    - start: 2015-04-12
+      end:   2015-04-12
+    type: Movie
+
+  - title: Another
+    score: 8
+    watched:
+    - start: 2015-04-14
+      end:   2015-04-16
+
+  - title: Hataraku Maou-sama!
+    score: 7
+    watched:
+    - start: 2015-04-16
+      end:   2015-04-18
+
+  - title: Kaze no Stigma
+    score: 5
+    watched:
+    - start: 2015-04-18
+      end:   2015-04-20
+
+  - title: NHK ni Youkoso!
+    score: 8
+    watched:
+    - start: 2015-04-20
+      end:   2015-04-22
+
+  - title: Psycho-Pass
+    score: 7
+    watched:
+    - start: 2015-04-22
+      end:   2015-04-24
+
+  - title: Psycho-Pass 2
+    score: 5
+    watched:
+    - start: 2015-04-24
+      end:   2015-04-25
+
+  - title: Maoyuu Maou Yuusha
+    score: 9
+    watched:
+    - start: 2015-04-25
+      end:   2015-04-26
+    favorite: true
+    characters:
+      - Maou
+
+  - title: Tokyo ESP
+    score: 5
+    watched:
+    - start: 2015-04-26
+      end:   2015-04-28
+
+  - title: Shinsekai yori
+    score: 8
+    watched:
+    - start: 2015-04-28
+      end:   2015-04-30
+
+  - title: Madan no Ou to Vanadis
+    score: 6
+    watched:
+    - start: 2015-04-30
+      end:   2015-05-01
+
+  - title: 'Kiseijuu: Sei no Kakuritsu'
+    score: 8
+    watched:
+    - start: 2015-05-01
+      end:   2015-05-03
+
+  - title: Absolute Duo
+    score: 2
+    watched:
+    - start: 2015-05-03
+      end:   2015-05-03
+    dropped: true
+
+  - title: Deadman Wonderland
+    score: 8
+    watched:
+    - start: 2015-05-04
+      end:   2015-05-06
+
+  - title: Trigun
+    score: 6
+    watched:
+    - start: 2015-05-07
+      end:   2015-05-11
+
+  - title: Fractale
+    score: 6
+    watched:
+    - start: 2015-05-11
+      end:   2015-05-12
+
+  - title: Shiki
+    score: 7
+    watched:
+    - start: 2015-05-12
+      end:   2015-05-15
+
+  - title: K
+    score: 6
+    watched:
+    - start: 2015-05-15
+      end:   2015-05-17
+
+  - title: Death Parade
+    score: 5
+    watched:
+    - start: 2015-05-18
+      end:   2015-05-20
+
+  - title: Gantz
+    score: 7
+    watched:
+    - start: 2015-05-21
+      end:   2015-05-25
+
+  - title: Shingetsutan Tsukihime
+    score: 7
+    watched:
+    - start: 2015-05-29
+      end:   2015-06-02
+
+  - title: Kill la Kill
+    score: 8
+    watched:
+    - start: 2015-06-03
+      end:   2015-06-07
+
+  - title: Sankarea
+    score: 7
+    watched:
+    - start: 2015-06-09
+      end:   2015-06-12
+
+  - title: Guilty Crown
+    score: 5
+    watched:
+    - start: 2015-06-12
+      end:   2015-06-14
+
+  - title: 'Nisekoi:'
+    score: 4
+    watched:
+    - start: 2015-06-14
+    dropped: true
+
+  - title: Oda Nobuna no Yabou
+    score: 7
+    watched:
+    - start: 2015-06-17
+      end:   2015-07-19
+
+  - title: Tengen Toppa Gurren Lagann
+    score: 6
+    watched:
+    - start: 2015-06-20
+      end:   2015-06-26
+
+  - title: Seikon no Qwaser
+    score: 7
+    watched:
+    - start: 2015-07-01
+      end:   2015-07-04
+
+  - title: Nanatsu no Taizai
+    score: 8
+    watched:
+    - start: 2015-07-05
+      end:   2015-07-08
+
+  - title: Pandora Hearts
+    score: 6
+    watched:
+    - start: 2015-07-08
+      end:   2015-07-11
+
+  - title: Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka
+    score: 6
+    watched:
+    - start: 2015-07-13
+      end:   2015-07-15
+
+  - title: School Days
+    score: 8
+    watched:
+    - start: 2015-07-15
+      end:   2015-07-17
+
+  - title: Noragami
+    score: 6
+    watched:
+    - start: 2015-07-17
+      end:   2015-07-19
+
+  - title: 'Darker than Black: Ryuusei no Gemini'
+    score: 5
+    watched:
+    - start: 2015-07-19
+      end:   2015-07-23
+
+  - title: 'Darker than Black: Kuro no Keiyakusha'
+    score: 6
+    watched:
+    - start: 2015-07-24
+      end:   2015-07-27
+
+  - title: Kyoukai no Kanata
+    score: 3
+    watched:
+    - start: 2015-07-27
+      end:   2015-07-28
+
+  - title: Seikon no Qwaser II
+    score: 6
+    watched:
+    - start: 2015-07-28
+      end:   2015-07-30
+
+  - title: Shingeki no Kyojin
+    score: 7
+    watched:
+    - start: 2015-07-30
+      end:   2015-08-02
+
+  - title: Fairy Tail
+    score: 6
+    watched:
+    - start: 2015-08-02
+      end:   2015-09-20
+
+  - title: Yamada-kun to 7-nin no Majo
+    score: 8
+    watched:
+    - start: 2015-08-04
+      end:   2015-08-06
+
+  - title: Claymore
+    score: 6
+    watched:
+    - start: 2015-08-06
+      end:   2015-08-09
+
+  - title: Ore no Imouto ga Konnani Kawaii Wake ga Nai
+    watched:
+    - start: 2015-08-09
+
+  - title: Prison School
+    score: 7
+    watched:
+    - start: 2015-08-09
+      end:   2015-09-28
+
+  - title: Monster Musume no Iru Nichijou
+    score: 6
+    watched:
+    - start: 2015-08-10
+
+  - title: Jitsu wa Watashi wa
+    score: 5
+    watched:
+    - start: 2015-08-14
+      end:   2015-10-01
+
+  - title: Nozo x Kimi
+    score: 5
+    watched:
+    - start: 2015-08-15
+      end:   2015-08-15
+    type: OVA
+
+  - title: Owari no Seraph
+    score: 6
+    watched:
+    - start: 2015-08-16
+      end:   2015-08-21
+
+  - title: Highschool of the Dead
+    score: 6
+    watched:
+    - start: 2015-09-08
+      end:   2015-09-11
+
+  - title: Plastic Memories
+    score: 4
+    watched:
+    - start: 2015-09-12
+      end:   2015-09-13
+
+  - title: 'Gate: Jieitai Kanochi nite, Kaku Tatakaeri'
+    score: 9
+    watched:
+    - start: 2015-09-13
+      end:   2015-09-21
+
+  - title: Fairy Tail (2014)
+    score: 5
+    watched:
+    - start: 2015-09-21
+
+  - title: Vampire Knight
+    score: 5
+    watched:
+    - start: 2015-09-23
+      end:   2015-09-25
+
+  - title: Overlord
+    score: 10
+    watched:
+    - start: 2015-09-29
+      end:   2015-10-01
+    - start: 2016-08-04
+      end:   2016-08-04
+    favorite: true
+    characters:
+      - Evileye
+      - Albedo
+
+
+  - title: Koukyoushihen Eureka Seven
+    score: 7
+    watched:
+    - start: 2015-10-03
+      end:   2015-10-11
+    characters:
+      - Anemone
+
+  - title: Rokka no Yuusha
+    score: 7
+    watched:
+    - start: 2015-10-13
+      end:   2015-10-16
+
+  - title: Seireitsukai no Blade Dance
+    score: 2
+    watched:
+    - start: 2015-10-18
+      end:   2015-10-19
+    dropped: true
+
+  - title: Ixion Saga DT
+    score: 5
+    watched:
+    - start: 2015-10-21
+      end:   2015-10-24
+
+  - title: 'K: Return of Kings'
+    score: 4
+    watched:
+    - start: 2015-10-26
+    dropped: true
+
+  - title: 'Owari no Seraph: Nagoya Kessen-hen'
+    score: 5
+    watched:
+    - start: 2015-11-04
+      end:   2015-12-29
+
+  - title: Rozen Maiden
+    score: 7
+    watched:
+    - start: 2015-11-07
+      end:   2015-11-11
+
+  - title: 'Rozen Maiden: Träumend'
+    score: 5
+    watched:
+    - start: 2015-11-11
+      end:   2015-11-13
+
+  - title: Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai
+    score: 7
+    watched:
+    - start: 2015-11-13
+      end:   2015-11-17
+
+  - title: Senjou no Valkyria
+    score: 6
+    watched:
+    - start: 2016-00-00
+      end:   2016-00-00
+
+  - title: Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita.
+    score: 5
+    watched:
+    - start: 2016-01-00
+      end:   2016-01-00
+
+  - title: Ookami Shoujo to Kuro Ouji
+    score: 5
+    watched:
+    - start: 2016-02-06
+      end:   2016-02-08
+
+  - title: 'Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation'
+    score: 7
+    watched:
+    - start: 2016-02-08
+      end:   2016-02-10
+
+  - title: 'Gate: Jieitai Kanochi nite, Kaku Tatakaeri Part 2'
+    score: 7
+    watched:
+    - start: 2016-02-10
+      end:   2016-03-29
+
+  - title: Strike the Blood
+    score: 5
+    watched:
+    - start: 2016-02-28
+      end:   2016-03-03
+
+  - title: Blood Lad
+    score: 6
+    watched:
+    - start: 2016-03-08
+      end:   2016-03-09
+
+  - title: 'Fullmetal Alchemist: Brotherhood'
+    score: 7
+    watched:
+    - start: 2016-03-21
+      end:   2016-03-27
+
+  - title: Dog Days
+    score: 6
+    watched:
+    - start: 2016-04-02
+      end:   2016-04-06
+
+  - title: Dog Days
+    score: 5
+    watched:
+    - start: 2016-04-07
+      end:   2016-04-12
+
+  - title: 'Sengoku Otome: Momoiro Paradox'
+    score: 6
+    watched:
+    - start: 2016-04-12
+      end:   2016-04-16
+
+  - title: Ichiban Ushiro no Daimaou
+    score: 5
+    watched:
+    - start: 2016-05-03
+      end:   2016-05-09
+
+  - title: Kono Subarashii Sekai ni Shukufuku wo!
+    score: 6
+    watched:
+    - start: 2016-05-14
+      end:   2016-05-15
+
+  - title: Hellsing
+    score: 6
+    watched:
+    - start: 2016-05-22
+      end:   2016-05-26
+
+  - title: 'Shingeki no Bahamut: Genesis'
+    score: 6
+    watched:
+    - start: 2016-07-27
+      end:   2016-07-28
+
+  - title: Panty & Stocking with Garterbelt
+    score: 3
+    watched:
+    - start: 2016-07-29
+      end:   2016-08-03
+    dropped: true
+
+  - title: Hai to Gensou no Grimgar
+    score: 3
+    watched:
+    - start: 2016-08-02
+      end:   2016-08-03
+    dropped: true
+
+  - title: Re:Zero kara Hajimeru Isekai Seikatsu
+    score: 7
+    watched:
+    - start: 2016-08-05
+      end:   2016-09-19
+
+  - title: Junketsu no Maria
+    watched:
+    - start: 2016-08-10
+
+  - title: ReLIFE
+    score: 7
+    watched:
+    - start: 2016-08-11
+      end:   2016-08-12
+
+  - title: Zipang
+    score: 6
+    watched:
+    - start: 2016-08-15
+      end:   2016-08-16
+
+  - title: One Punch Man
+    score: 6
+    watched:
+    - start: 2016-08-29
+      end:   2016-08-30
+
+  - title: .hack//Sign
+    score: 5
+    watched:
+    - start: 2016-09-05
+    dropped: true
+
+  - title: 'Danganronpa 3: The End of Kibougamine Gakuen - Mirai-hen'
+    score: 6
+    watched:
+    - start: 2016-09-12
+      end:   2016-10-09
+
+  - title: 'Danganronpa 3: The End of Kibougamine Gakuen - Zetsubou-hen'
+    score: 7
+    watched:
+    - start: 2016-09-14
+      end:   2016-10-09
+
+  - title: Jinrui wa Suitai Shimashita
+    score: 5
+    watched:
+    - start: 2016-11-20
+      end:   2016-11-28
+
+  - title: Big Order (TV)
+    score: 5
+    watched:
+    - start: 2016-12-19
+      end:   2016-12-21
+
+  - title: Date A Live
+    score: 6
+    watched:
+    - start: 2017-01-02
+      end:   2017-01-09
+
+  - title: 'Date A Live: Date to Date'
+    score: 5
+    watched:
+    - start: 2017-01-09
+      end:   2017-01-09
+    type: OVA
+
+  - title: Shinseiki Evangelion
+    score: 6
+    watched:
+    - start: 2017-02-01
+      end:   2017-02-07
+
+  - title: 'Shinseiki Evangelion Movie: Air/Magokoro wo, Kimi ni'
+    score: 5
+    watched:
+    - start: 2017-02-24
+      end:   2017-02-24
+    type: Movie
+
+  - title: World Trigger
+    score: 7
+    watched:
+    - start: 2017-02-24
+      end:   2017-03-03
+
+  - title: Isuca
+    score: 3
+    watched:
+    - start: 2017-03-05
+      end:   2017-03-10
+
+  - title: Ajin
+    score: 8
+    watched:
+    - start: 2017-03-11
+      end:   2017-03-11
+
+  - title: Ajin Part 2
+    score: 8
+    watched:
+    - start: 2017-03-11
+      end:   2017-03-12
+
+  - title: Outbreak Company
+    score: 8
+    watched:
+    - start: 2017-03-17
+      end:   2017-03-18
+
+  - title: Kono Subarashii Sekai ni Shukufuku wo! 2
+    score: 6
+    watched:
+    - start: 2017-03-19
+      end:   2017-03-19
+
+  - title: Zankyou no Terror
+    score: 8
+    watched:
+    - start: 2017-03-20
+      end:   2017-03-21
+
+  - title: Koutetsujou no Kabaneri
+    score: 5
+    watched:
+    - start: 2017-03-21
+      end:   2017-03-22
+
+  - title: Ansatsu Kyoushitsu
+    score: 6
+    watched:
+    - start: 2017-03-22
+      end:   2017-03-25
+
+  - title: Btooom!
+    score: 7
+    watched:
+    - start: 2017-03-22
+      end:   2017-03-22
+
+  - title: Ansatsu Kyoushitsu 2nd Season
+    score: 6
+    watched:
+    - start: 2017-03-26
+      end:   2017-05-16
+
+  - title: Boku dake ga Inai Machi
+    score: 7
+    watched:
+    - start: 2017-05-18
+      end:   2017-05-19
+
+  - title: Paprika
+    score: 6
+    watched:
+    - start: 2017-05-21
+      end:   2017-05-21
+    type: Movie
+
+  - title: Kekkai Sensen
+    score: 4
+    watched:
+    - start: 2017-05-28
+      end:   2017-06-01
+
+  - title: Un-Go
+    score: 7
+    watched:
+    - start: 2017-06-03
+      end:   2017-06-04
+
+  - title: Seikaisuru Kado
+    score: 6
+    watched:
+    - start: 2017-06-15
+      end:   2017-07-01
+
+  - title: 'Seikaisuru Kado: Ninovo'
+    score: 6
+    watched:
+    - start: 2017-06-15
+      end:   2017-06-15
+    type: ONA
+
+  - title: Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?
+    score: 5
+    watched:
+    - start: 2017-06-17
+      end:   2017-06-24
+
+  - title: Ao no Exorcist
+    score: 6
+    watched:
+    - start: 2017-07-10
+      end:   2017-07-12
+
+  - title: 'Ao no Exorcist: Kyoto Fujouou-hen'
+    score: 5
+    watched:
+    - start: 2017-07-13
+      end:   2017-07-16
+
+  - title: Youjo Senki
+    score: 8
+    watched:
+    - start: 2017-07-17
+      end:   2017-07-17
+
+  - title: Mononoke Hime
+    score: 8
+    watched:
+    - start: 2017-07-19
+      end:   2017-07-19
+    type: Movie
+
+  - title: Little Witch Academia (TV)
+    score: 7
+    watched:
+    - start: 2017-07-21
+      end:   2017-08-04
+
+  - title: Koe no Katachi
+    score: 7
+    watched:
+    - start: 2017-07-22
+      end:   2017-07-22
+    type: Movie
+
+  - title: Kimi no Na wa.
+    score: 7
+    watched:
+    - start: 2017-08-07
+      end:   2017-08-07
+    type: Movie
+
+  - title: Soredemo Sekai wa Utsukushii
+    score: 7
+    watched:
+    - start: 2017-08-10
+      end:   2017-08-16
+
+  - title: Isekai wa Smartphone to Tomo ni.
+    score: 5
+    watched:
+    - start: 2017-10-15
+      end:   2017-10-19
+
+  - title: Aku no Hana
+    score: 7
+    watched:
+    - start: 2017-10-20
+      end:   2017-10-21
+
+  - title: Knight's & Magic
+    score: 6
+    watched:
+    - start: 2017-10-24
+      end:   2017-10-26
+
+  - title: Speed Grapher
+    score: 6
+    watched:
+    - start: 2017-12-15
+      end:   2017-12-19
+
+  - title: Re:Creators
+    score: 6
+    watched:
+    - start: 2017-12-31
+      end:   2018-01-03
+
+  - title: Monster
+    score: 7
+    watched:
+    - start: 2018-01-06
+
+  - title: MM!
+    score: 5
+    watched:
+    - start: 2018-01-21
+      end:   2018-01-25
+
+  - title: 'Date A Live II: Kurumi Star Festival'
+    score: 6
+    watched:
+    - start: 2018-01-26
+      end:   2018-01-26
+    type: OVA
+
+  - title: Mahou Shoujo Madoka★Magica
+    score: 7
+    watched:
+    - start: 2018-01-26
+      end:   2018-01-26
+
+  - title: Overlord II
+    score: 8
+    watched:
+    - start: 2018-02-24
+      end:   2018-04-03
+
+  - title: Death March kara Hajimaru Isekai Kyousoukyoku
+    score: 6
+    watched:
+    - start: 2018-03-01
+      end:   2018-03-30
+
+  - title: Netoge no Yome wa Onnanoko ja Nai to Omotta?
+    score: 6
+    watched:
+    - start: 2018-03-02
+    dropped: true
+
+  - title: Isekai no Seikishi Monogatari
+    score: 6
+    watched:
+    - start: 2018-03-09
+    type: OVA
+
+  - title: Bungou Stray Dogs
+    score: 6
+    watched:
+    - start: 2018-03-10
+    dropped: true
+
+  - title: Arata Kangatari
+    score: 7
+    watched:
+    - start: 2018-04-09
+      end:   2018-04-11
+
+  - title: Mahou Shoujo Site
+    score: 7
+    watched:
+    - start: 2018-04-16
+
+  - title: 'Naruto: Shippuuden Movie 6 - Road to Ninja'
+    score: 8
+    watched:
+    - start: 2018-04-16
+      end:   2018-04-16
+    type: Movie
+
+  - title: 'Magi: The Labyrinth of Magic'
+    score: 7
+    watched:
+    - start: 2018-05-18
+      end:   2018-05-20
+
+  - title: 'Magi: The Kingdom of Magic'
+    score: 7
+    watched:
+    - start: 2018-05-20
+      end:   2018-05-21
+
+  - title: xxxHOLiC
+    watched:
+    - start: 2018-05-24
+
+  - title: Juuni Kokuki
+    score: 7
+    watched:
+    - start: 2018-06-25
+      end:   2018-06-27
+
+  - title: Fate/Zero
+    score: 7
+    watched:
+    - start: 2018-06-30
+      end:   2018-07-01
+
+  - title: Fate/Zero 2nd Season
+    score: 7
+    watched:
+    - start: 2018-07-01
+      end:   2018-07-05
+
+  - title: Overlord III
+    score: 8
+    watched:
+    - start: 2018-07-13
+      end:   2018-10-02
+
+  - title: Tetsuwan Birdy Decode
+    score: 7
+    watched:
+    - start: 2018-07-31
+      end:   2018-08-02
+
+  - title: Isekai Maou to Shoukan Shoujo no Dorei Majutsu
+    watched:
+    - start: 2018-08-10
+
+  - title: Cardfight!! Vanguard
+    watched:
+    - start: 2018-09-09
+
+  - title: Witch Craft Works
+    score: 7
+    watched:
+    - start: 2018-09-12
+      end:   2018-10-07
+
+  - title: Sakasama no Patema
+    score: 9
+    watched:
+    - start: 2018-09-23
+      end:   2018-09-23
+    type: Movie
+    favorite: true
+
+  - title: Yao Shen Ji
+    score: 6
+    watched:
+    - start: 2018-10-18
+      end:   2018-10-18
+    type: ONA
+
+  - title: Yao Shen Ji 2nd Season
+    score: 6
+    watched:
+    - start: 2018-10-19
+      end:   2018-10-20
+    type: ONA
+
+  - title: Mahoutsukai no Yome
+    watched:
+    - start: 2018-10-21
+
+  - title: Tensei shitara Slime Datta Ken
+    score: 1
+    watched:
+    - start: 2018-10-21
+      end:   2019-03-27
+
+  - title: Goblin Slayer
+    score: 4
+    watched:
+    - start: 2018-10-23
+    dropped: true
+
+  - title: 'Code Geass: Hangyaku no Lelouch'
+    score: 8
+    watched:
+    - start: 2018-11-02
+      end:   2018-11-03
+    characters:
+      - Kallen Stadtfeld
+      - Mao
+
+  - title: 'Code Geass: Hangyaku no Lelouch R2'
+    score: 9
+    watched:
+    - start: 2018-11-03
+      end:   2018-11-03
+
+  - title: Quanzhi Fashi
+    score: 6
+    watched:
+    - start: 2018-11-07
+      end:   2018-11-07
+    type: ONA
+
+  - title: Quanzhi Fashi II
+    score: 5
+    watched:
+    - start: 2018-11-07
+      end:   2018-11-08
+    type: ONA
+
+  - title: Inuyashiki
+    score: 6
+    watched:
+    - start: 2018-11-08
+      end:   2018-11-08
+
+  - title: Summer Wars
+    score: 2
+    watched:
+    - start: 2018-11-12
+      end:   2018-11-12
+    type: Movie
+
+  - title: Zombieland Saga
+    score: 7
+    watched:
+    - start: 2018-11-24
+      end:   2019-01-05
+
+  - title: Satsuriku no Tenshi
+    watched:
+    - start: 2019-01-06
+
+  - title: Aldnoah.Zero
+    score: 7
+    watched:
+    - start: 2019-01-07
+      end:   2019-01-07
+
+  - title: Aldnoah.Zero Part 2
+    score: 7
+    watched:
+    - start: 2019-01-07
+      end:   2019-01-08
+
+  - title: Toaru Majutsu no Index
+    score: 6
+    watched:
+    - start: 2019-01-19
+
+  - title: Chobits
+    score: 5
+    watched:
+    - start: 2019-03-01
+    dropped: true
+
+  - title: Hal
+    score: 6
+    watched:
+    - start: 2019-03-03
+      end:   2019-03-06
+    type: Movie
+
+  - title: Charlotte
+    score: 7
+    watched:
+    - start: 2019-03-10
+      end:   2019-03-15
+
+  - title: 'Charlotte: Tsuyoimono-tachi'
+    score: 7
+    watched:
+    - start: 2019-03-15
+      end:   2019-03-15
+    type: Special
+
+  - title: Densetsu no Yuusha no Densetsu
+    watched:
+    - start: 2019-03-16
+
+  - title: Tate no Yuusha no Nariagari
+    score: 7
+    watched:
+    - start: 2019-03-23
+      end:   2019-06-26
+
+  - title: 'Sword Art Online: Alicization'
+    score: 7
+    watched:
+    - start: 2019-03-24
+      end:   2019-04-01
+
+  - title: Rakudai Kishi no Cavalry
+    watched:
+    - start: 2019-04-02
+
+  - title: Darling in the FranXX
+    score: 6
+    watched:
+    - start: 2019-07-14
+      end:   2019-07-27
+
+  - title: Kenja no Mago
+    score: 6
+    watched:
+    - start: 2019-07-27
+      end:   2019-07-28
+
+  - title: Maou-sama, Retry!
+    score: 7
+    watched:
+    - start: 2019-08-02
+      end:   2019-09-19
+
+  - title: Isekai Cheat Magician
+    score: 4
+    watched:
+    - start: 2019-08-03
+    dropped: true
+
+  - title: Level E
+    score: 7
+    watched:
+    - start: 2019-08-04
+      end:   2019-08-07
+
+  - title: Isekai Quartet
+    score: 7
+    watched:
+    - start: 2019-08-08
+      end:   2019-08-08
+
+  - title: Arifureta Shokugyou de Sekai Saikyou
+    score: 7
+    watched:
+    - start: 2019-08-10
+
+  - title: Hinamatsuri
+    score: 7
+    watched:
+    - start: 2019-08-12
+      end:   2019-08-15
+
+  - title: Tonari no Kaibutsu-kun
+    watched:
+    - start: 2019-09-07
+
+  - title: Youjo Senki Movie
+    score: 7
+    watched:
+    - start: 2019-09-23
+      end:   2019-09-25
+    type: Movie
+
+  - title: 'First Squad: The Moment of Truth'
+    score: 7
+    watched:
+    - start: 2019-10-03
+      end:   2019-10-03
+    type: Movie
+
+  - title: Seikimatsu Occult Gakuin
+    watched:
+    - start: 2019-10-05
+
+  - title: 'Sword Art Online: Alicization - War of Underworld'
+    score: 6
+    watched:
+    - start: 2019-10-24
+      end:   2019-12-30
+
+  - title: 'Sword Art Online: Alicization - War of Underworld Reflection'
+    score: 7
+    watched:
+    - start: 2019-10-24
+      end:   2019-10-24
+    type: TV Special
+
+  - title: Mirai no Mirai
+    score: 6
+    watched:
+    - start: 2020-01-25
+      end:   2020-01-25
+    type: Movie
+
+  - title: Karigurashi no Arrietty
+    score: 8
+    watched:
+    - start: 2020-01-26
+      end:   2020-01-26
+    type: Movie
+
+  - title: Ashita Sekai ga Owaru toshitemo
+    score: 5
+    watched:
+    - start: 2020-01-27
+      end:   2020-01-27
+    type: Movie
+
+  - title: Sayonara no Asa ni Yakusoku no Hana wo Kazarou
+    score: 6
+    watched:
+    - start: 2020-01-28
+      end:   2020-01-28
+    type: Movie
+
+  - title: Beastars
+    score: 9
+    watched:
+    - start: 2020-04-06
+      end:   2020-04-14
+    favorite: true
+
+  - title: Mairimashita! Iruma-kun
+    score: 8
+    watched:
+    - start: 2020-04-22
+      end:   2020-05-04
+
+  - title: Ni no Kuni
+    score: 6
+    watched:
+    - start: 2020-04-25
+      end:   2020-04-25
+    type: Movie
+
+  - title: 'Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen'
+    score: 7
+    watched:
+    - start: 2020-04-27
+      end:   2020-04-29
+
+  - title: 'Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 2nd Season'
+    score: 6
+    watched:
+    - start: 2020-04-29
+      end:   2020-06-25
+
+  - title: Zero kara Hajimeru Mahou no Sho
+    score: 7
+    watched:
+    - start: 2020-05-07
+      end:   2020-05-08
+
+  - title: 'Code Geass: Fukkatsu no Lelouch'
+    score: 7
+    watched:
+    - start: 2020-05-12
+      end:   2020-05-12
+    type: Movie
+
+  - title: Isekai Quartet 2
+    score: 7
+    watched:
+    - start: 2020-05-12
+      end:   2020-05-14
+
+  - title: 'Code Geass: Boukoku no Akito 1 - Yokuryuu wa Maiorita'
+    score: 7
+    watched:
+    - start: 2020-05-13
+      end:   2020-05-13
+    type: Movie
+
+  - title: 'Code Geass: Boukoku no Akito 2 - Hikisakareshi Yokuryuu'
+    score: 6
+    watched:
+    - start: 2020-05-13
+      end:   2020-05-13
+    type: Movie
+
+  - title: 'Code Geass: Boukoku no Akito 3 - Kagayaku Mono Ten yori Otsu'
+    score: 6
+    watched:
+    - start: 2020-05-14
+      end:   2020-05-14
+    type: Movie
+
+  - title: 'Code Geass: Boukoku no Akito 4 - Nikushimi no Kioku kara'
+    score: 6
+    watched:
+    - start: 2020-05-14
+      end:   2020-05-14
+    type: Movie
+
+  - title: 'Code Geass: Boukoku no Akito 5 - Itoshiki Mono-tachi e'
+    score: 5
+    watched:
+    - start: 2020-05-14
+      end:   2020-05-14
+    type: Movie
+
+  - title: Tsuujou Kougeki ga Zentai Kougeki de Ni-kai Kougeki no Okaasan wa Suki desu
+      ka?
+    score: 6
+    watched:
+    - start: 2020-05-16
+    dropped: true
+
+  - title: Hataage! Kemono Michi
+    score: 7
+    watched:
+    - start: 2020-05-23
+      end:   2020-05-24
+
+  - title: Hagure Yuusha no Aesthetica
+    score: 8
+    watched:
+    - start: 2020-05-26
+      end:   2020-06-02
+
+  - title: 'Nejimaki Seirei Senki: Tenkyou no Alderamin'
+    score: 5
+    watched:
+    - start: 2020-05-26
+      end:   2020-06-06
+
+  - title: Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...
+    score: 6
+    watched:
+    - start: 2020-06-16
+    dropped: true
+
+  - title: 'Sword Art Online: Alicization - War of Underworld 2nd Season'
+    score: 6
+    watched:
+    - start: 2020-07-12
+      end:   2020-09-19
+
+  - title: Seikai no Monshou
+    score: 7
+    watched:
+    - start: 2020-07-18
+      end:   2020-07-25
+
+  - title: Grancrest Senki
+    score: 6
+    watched:
+    - start: 2020-07-29
+      end:   2020-08-09
+
+  - title: Kami no Tou
+    score: 6
+    watched:
+    - start: 2020-09-02
+      end:   2020-09-06
+
+  - title: Gleipnir
+    score: 7
+    watched:
+    - start: 2020-09-10
+      end:   2020-09-23
+    characters:
+      - Clair Aoki
+
+  - title: Hello World
+    score: 6
+    watched:
+    - start: 2020-09-26
+      end:   2020-09-28
+    type: Movie
+
+  - title: 'Mahouka Koukou no Rettousei: Raihousha-hen'
+    score: 6
+    watched:
+    - start: 2020-11-04
+    dropped: true
+
+  - title: Monster Musume no Oishasan
+    watched:
+    - start: 2020-11-13
+    dropped: true
+
+  - title: Vandread
+    watched:
+    - start: 2020-11-15
+
+  - title: 'Mushoku Tensei: Isekai Ittara Honki Dasu'
+    score: 8
+    watched:
+    - start: 2021-01-28
+      end:   2021-03-23
+
+  - title: Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen
+    watched:
+    - start: 2021-02-12
+      end:   2021-02-16
+
+  - title: Arakawa Under the Bridge
+    watched:
+    - start: 2021-02-16
+
+  - title: 'Dragonaut: The Resonance'
+    watched:
+    - start: 2021-03-02
+    dropped: true
+
+  - title: Vanitas no Karte
+    score: 9
+    watched:
+    - start: 2023-10-23
+      end:   2023-10-24
+
+  - title: Vanitas no Karte Part 2
+    score: 10
+    watched:
+    - start: 2023-10-25
+
+  - title: Tenkuu Shinpan
+    characters:
+      - Yayoi Kusakabe
+# Экспорт из MAL Конец
+
+# Перепроверить Начало
+  - title: Mushoku Tensei - Isekai Ittara Honki Dasu
+    score: 8
+    watched:
+    - start: 2021-01-28
+      end: 2021-03-23
+
+  - title: Kimi to Boku no Saigo no Senjou, Arui wa Sekai ga Hajimaru Seisen
+    watched:
+    - start: 2021-02-12
+      end: 2021-02-16
+
+  - title: Arakawa Under the Bridge
+    watched:
+    - start: 2021-02-16
+
+  - title: Dragonaut Resonance
+    watched:
+    - start: 2021-03-02
+
+  - title: Kumo desu ga, Nani ka?
+    score: 6
+    watched:
+    - start: 2021-04-24
+      end: 2021-07-03
+
+  - title: Re:Zero kara Hajimeru Isekai Seikatsu
+    score: 8
+    watched:
+    - start: 2021-04-29
+      end: 2021-04-30
+
+  - title: Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season
+    score: 6
+    watched:
+    - start: 2021-04-30
+      end: 2021-05-02
+
+  - title: Dr. Stone
+    watched:
+    - start: 2021-05-09
+      end: 2021-05-17
+
+  - title: Dr. Stone Season 2
+    watched:
+    - start: 2021-05-18
+      end: 2021-05-20
+
+  - title: Dogeza de Tanondemita
+    watched:
+    - start: 2021-05-25
+      end: 2021-05-27
+
+  - title: Seijo no Maryoku wa Bannou Desu
+    watched:
+    - start: 2021-06-05
+      end: 2021-06-25
+
+  - title: Mairimashita! Iruma-kun 2nd Season
+    watched:
+    - start: 2021-06-20
+      end: 2021-09-12
+
+  - title: Kaifuku Jutsushi no Yarinaoshi
+    score: 9
+    watched:
+    - start: 2021-07-01
+      end: 2021-07-01
+
+  - title: BNA
+    watched:
+    - start: 2021-07-02
+      end: 2021-07-04
+
+  - title: Naruto Shippuden Movie 4 - The Lost Tower
+    score: 6
+    watched:
+    - start: 2021-07-08
+
+  - title: 86 - Eighty Six
+    score: 7
+    watched:
+    - start: 2021-08-03
+      end: 2021-08-18
+
+  - title: Castlevania
+    watched:
+    - start: 2021-08-18
+      end: 2021-08-23
+
+  - title: Peter Grill to Kenja no Jikan
+    watched:
+    - start: 2021-09-17
+
+  - title: Genjitsu Shugi Yuusha no Oukoku Saikenki
+    score: 7
+    watched:
+    - start: 2021-09-27
+      end: 2021-10-21
+
+  - title: Mushoku Tensei - Isekai Ittara Honki Dasu Part 2
+    watched:
+    - start: 2021-11-05
+      end: 2021-12-19
+
+  - title: Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru
+    watched:
+    - start: 2021-11-07
+      end: 2021-12-22
+
+  - title: Saihate no Paladin
+    watched:
+    - start: 2021-11-08
+
+  - title: Xian Wang de Richang Shenghuo
+    score: 9
+    watched:
+    - start: 2021-11-13
+      end: 2021-11-14
+
+  - title: Xian Wang de Richang Shenghuo 2nd Season
+    watched:
+    - start: 2021-11-15
+      end: 2022-01-28
+
+  - title: Hyakuman no Inochi no Ue ni Ore wa Tatteiru
+    score: 5
+    watched:
+    - start: 2021-11-16
+      end: 2021-11-19
+
+  - title: Tenkuu Shinpan
+    score: 8
+    watched:
+    - start: 2021-12-13
+
+  - title: Mobile Suit Gundam - The 08th MS Team
+    watched:
+    - start: 2021-12-14
+
+  - title: Black Lagoon
+    watched:
+    - start: 2021-12-22
+
+  - title: Shikkakumon no Saikyou Kenja
+    watched:
+    - start: 2022-02-04
+
+  - title: Kenja no Deshi wo Nanoru Kenja
+    watched:
+    - start: 2022-02-11
+      end: 2022-04-07
+
+  - title: Tatoeba Last Dungeon Mae no Mura no Shounen ga Joban no Machi de Kurasu Youna Monogatari
+    watched:
+    - start: 2022-04-15
+      end: 2022-04-20
+
+  - title: Tate no Yuusha no Nariagari Season 2
+    watched:
+    - start: 2022-04-20
+      end: 2022-07-05
+
+  - title: Shijou Saikyou no Daimaou, Murabito A ni Tensei suru
+    score: 7
+    watched:
+    - start: 2022-05-01
+      end: 2022-06-23
+
+  - title: Trinity Seven
+    watched:
+    - start: 2022-06-07
+
+  - title: Iya na Kao Sare Nagara Opantsu Misete Moraitai 2nd
+    watched:
+    - start: 2022-06-08
+
+  - title: Yuusha, Yamemasu!
+    score: 8
+    watched:
+    - start: 2022-06-20
+      end: 2022-06-21
+
+  - title: Maou Gakuin no Futekigousha
+    watched:
+    - start: 2022-06-24
+      end: 2022-06-26
+
+  - title: Overlord IV
+    watched:
+    - start: 2022-07-12
+      end: 2022-09-27
+
+  - title: Yofukashi no Uta
+    watched:
+    - start: 2022-07-13
+
+  - title: ODD TAXI
+    watched:
+    - start: 2022-07-27
+      end: 2022-08-02
+
+  - title: Vermeil in Gold
+    watched:
+    - start: 2022-08-10
+
+  - title: Isekai Yakkyoku
+    watched:
+    - start: 2022-08-16
+
+  - title: Spy x Family
+    watched:
+    - start: 2022-08-25
+
+  - title: Kage no Jitsuryokusha ni Naritakute!
+    watched:
+    - start: 2022-11-22
+      end: 2023-02-15
+
+  - title: Tsuki ga Michibiku Isekai Douchuu
+    watched:
+    - start: 2023-01-01
+      end: 2023-01-14
+
+  - title: Steven Universe
+    watched:
+    - start: 2023-01-03
+
+  - title: Chainsaw Man
+    watched:
+    - start: 2023-01-06
+
+  - title: Saikyou Onmyouji no Isekai Tenseiki
+    watched:
+    - start: 2023-01-27
+
+  - title: Hyouken no Majutsushi ga Sekai wo Suberu
+    watched:
+    - start: 2023-01-28
+
+  - title: Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life
+    watched:
+    - start: 2023-01-29
+      end: 2023-04-01
+
+  - title: Eiyuu-ou, Bu wo Kiwameru Tame Tenseisu
+    watched:
+    - start: 2023-02-14
+
+  - title: Tondemo Skill de Isekai Hourou Meshi
+    watched:
+    - start: 2023-02-15
+
+  - title: Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru
+    watched:
+    - start: 2023-04-20
+      end: 2023-06-29
+
+  - title: Isekai Shoukan wa Nidome Desu
+    watched:
+    - start: 2023-05-14
+
+  - title: Mashle
+    watched:
+    - start: 2023-05-26
+
+  - title: I'm the Great Immortal
+    score: 
+    watched:
+    - start: 2021-02-20
+      end: 
+
+  - title: Ryuu no Haisha
+    score: 
+    watched:
+    - start: 2022-04-25
+      end: 2022-04-27
+
+  - title: Jichou wo Shiranai Kamigami no Shito
+    score: 
+    watched:
+    - start: 2023-05-24
+      end: 
+# Перепроверить Конец
+
+  - title: Kage no Jitsuryokusha ni Naritakute! 2nd Season
+    score: 7
+    watched:
+      - start: 2024-01-02
+      - end:   2024-01-03
+
+  - title: Mushoku Tensei 2nd Season
+    score: 8
+    watched:
+      - start: 2024-01-04
+      - end:   2024-01-04
+
+  - title: Ore wa Seikan Kokka no Akutoku Ryoushu!
+    watched:
+    - start: 2025-05-20

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anime List</title>
+<style>
+  body > div {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --surface-color: #ffffff;
+    --border-color: #e0e0e0;
+    --header-bg: #2563eb;
+    --header-hover: #1d4ed8;
+    --row-hover: #f8fafc;
+    --favorite-bg: #fef3c7;
+    --shadow: 0 2px 8px rgba(0,0,0,0.1);
+    --character-shadow: 4px 0 0 #ec4899;
+    --scrollbar-bg: #f1f1f1;
+    --scrollbar-thumb: #c1c1c1;
+  }
+
+  [data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e5e5e5;
+    --surface-color: #2a2a2a;
+    --border-color: #404040;
+    --header-bg: #3b82f6;
+    --header-hover: #2563eb;
+    --row-hover: #333333;
+    --favorite-bg: #374151;
+    --shadow: 0 2px 8px rgba(0,0,0,0.3);
+    --character-shadow: 2px 0 0 #f472b6;
+    --scrollbar-bg: #2a2a2a;
+    --scrollbar-thumb: #555555;
+    color-scheme: dark;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .theme-toggle {
+    background: var(--header-bg);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+
+  .theme-toggle:hover {
+    background: var(--header-hover);
+  }
+
+  .filter-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .filter-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .table-container {
+    background: var(--surface-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+  }
+
+  th, td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+  }
+
+  th {
+    background: var(--header-bg);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  td:nth-child(6), td:nth-child(7) {
+    white-space: nowrap;
+  }
+
+  th:hover {
+    background: var(--header-hover);
+  }
+
+  th .sort-indicator {
+    /* position: absolute;
+    right: 10px;
+    font-size: 12px; */
+    display: none;
+  }
+
+  tr:hover {
+    background: var(--row-hover);
+  }
+
+  tr.favorite-row {
+    background: var(--favorite-bg) !important;
+  }
+
+  tr[data-characters] {
+    box-shadow: inset var(--character-shadow);
+    cursor: pointer;
+  }
+
+  th:nth-child(4), 
+  td:nth-child(4) {
+    display: none;
+  }
+
+  .character-tooltip {
+    position: absolute;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  th:nth-child(5), td:nth-child(5) {
+    display: none;
+  }
+
+  /* Адаптивность для узких экранов */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+
+    .header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .controls {
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    th, td {
+      padding: 8px 6px;
+      font-size: 14px;
+    }
+
+    table {
+      min-width: 600px;
+    }
+
+    /* Скрываем менее важные колонки на мобильных */
+    th:nth-child(3), td:nth-child(3),
+    th:nth-child(5), td:nth-child(5)
+    /* th:nth-child(6), td:nth-child(6),
+    th:nth-child(7), td:nth-child(7) */ {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    table {
+      min-width: 400px;
+    }
+    
+    th, td {
+      padding: 6px 4px;
+      font-size: 13px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Anime List</h1>
+  <div class="controls">
+    <label class="filter-label">
+      <input type="checkbox" id="filterWatched" checked>
+      Не показывать неначатые
+    </label>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Тёмная тема</button>
+  </div>
+</div>
+
+<div class="table-container">
+  <table id="animeTable">
+    <thead>
+      <tr>
+        <th data-key="title">Title</th>
+        <th data-key="score">Score</th>
+        <th data-key="type">Type</th>
+        <th data-key="dropped">Dropped</th>
+        <th data-key="favorite">Favorite</th>
+        <th data-key="startDate">Start Date</th>
+        <th data-key="endDate">End Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="7" style="text-align:center;">Loading...</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script>
+  // Переключение темы
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    const button = document.querySelector('.theme-toggle');
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    button.textContent = newTheme === 'dark' ? '☀️ Светлая тема' : '🌙 Тёмная тема';
+  }
+
+  // Загрузка сохранённой темы
+  function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    const button = document.querySelector('.theme-toggle');
+    
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    button.textContent = savedTheme === 'dark' ? '☀️ Светлая тема' : '🌙 Тёмная тема';
+  }
+
+  document.getElementById("filterWatched").addEventListener("change", () => {
+    sortByKey(sortKey);
+  });
+
+  const defaultType = "TV";
+  const tableBody = document.querySelector("#animeTable tbody");
+  const headers = document.querySelectorAll("#animeTable thead th");
+  let animeData = [];
+  let sortKey = null;
+  let sortAsc = true;
+
+  function getFirstStartDate(watched) {
+    if (!watched || watched.length === 0) return "";
+    const firstPeriod = watched[0];
+    return firstPeriod && firstPeriod.start ? String(firstPeriod.start) : "";
+  }
+
+  function getFirstEndDate(watched) {
+    if (!watched || watched.length === 0) return "";
+    const firstPeriod = watched[0];
+    return firstPeriod && firstPeriod.end ? String(firstPeriod.end) : "";
+  }
+
+  async function loadYaml() {
+    try {
+      const res = await fetch("anime.yaml");
+      if (!res.ok) throw new Error("Не удалось загрузить anime.yaml");
+      const text = await res.text();
+      const data = jsyaml.load(text, {schema: jsyaml.CORE_SCHEMA});
+      animeData = data.anime.map(item => {
+        if (!item.type) item.type = data.default_type || defaultType;
+        if (item.dropped === undefined) item.dropped = false;
+        if (item.favorite === undefined) item.favorite = false;
+        return item;
+      });
+      renderTable(animeData);
+    } catch (e) {
+      tableBody.innerHTML = `<tr><td colspan="7" style="color:red; text-align:center;">Ошибка: ${e.message}</td></tr>`;
+    }
+  }
+
+  function renderTable(data) {
+    const showWatchedOnly = document.getElementById("filterWatched")?.checked;
+    const filteredData = showWatchedOnly ? data.filter(item => item.watched) : data;
+    if (data.length === 0) {
+      tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center;">Нет данных</td></tr>';
+      return;
+    }
+    tableBody.innerHTML = "";
+    const tooltip = document.getElementById("tooltip");
+    filteredData.forEach((anime, index) => {
+      const tr = document.createElement("tr");
+
+      if (anime.favorite) tr.classList.add("favorite-row");
+      if (anime.characters && anime.characters.length > 0) {
+        tr.setAttribute("data-characters", "true");
+
+        tr.addEventListener("mousemove", (e) => {
+          tooltip.textContent = "♥ " + anime.characters.join(" ♥ ") + " ♥";
+          tooltip.style.left = `${e.pageX + 10}px`;
+          tooltip.style.top = `${e.pageY + 10}px`;
+          tooltip.style.opacity = "1";
+          tooltip.style.transform = "scale(1)";
+        });
+
+        tr.addEventListener("mouseleave", () => {
+          tooltip.style.opacity = "0";
+          tooltip.style.transform = "scale(0.95)";
+        });
+      }
+
+      const tdTitle = document.createElement("td");
+      tdTitle.textContent = anime.title || "";
+      tr.appendChild(tdTitle);
+
+      const tdScore = document.createElement("td");
+      tdScore.textContent = anime.score !== undefined ? anime.score : "";
+      tr.appendChild(tdScore);
+
+      const tdType = document.createElement("td");
+      tdType.textContent = anime.type || "";
+      tr.appendChild(tdType);
+
+      const tdDropped = document.createElement("td");
+      tdDropped.textContent = anime.dropped ? "Yes" : "";
+      tr.appendChild(tdDropped);
+
+      const tdFav = document.createElement("td");
+      tdFav.textContent = anime.favorite ? "Yes" : "";
+      tr.appendChild(tdFav);
+
+      const tdStartDate = document.createElement("td");
+      tdStartDate.textContent = getFirstStartDate(anime.watched);
+      tr.appendChild(tdStartDate);
+
+      const tdEndDate = document.createElement("td");
+      tdEndDate.textContent = getFirstEndDate(anime.watched);
+      tr.appendChild(tdEndDate);
+
+      tableBody.appendChild(tr);
+    });
+  }
+
+  function sortByKey(key) {
+    if (sortKey === key) {
+      sortAsc = !sortAsc;
+    } else {
+      sortKey = key;
+      sortAsc = true;
+    }
+
+    animeData.sort((a, b) => {
+      let valA = a[key];
+      let valB = b[key];
+      
+      if (key === "startDate") {
+        valA = getFirstStartDate(a.watched);
+        valB = getFirstStartDate(b.watched);
+      } else if (key === "endDate") {
+        valA = getFirstEndDate(a.watched);
+        valB = getFirstEndDate(b.watched);
+      }
+
+      if (typeof valA === "boolean") valA = valA ? 1 : 0;
+      if (typeof valB === "boolean") valB = valB ? 1 : 0;
+
+      if (valA === undefined || valA === null) valA = "";
+      if (valB === undefined || valB === null) valB = "";
+
+      if (!isNaN(valA) && !isNaN(valB)) {
+        return sortAsc ? valA - valB : valB - valA;
+      }
+      valA = valA.toString().toLowerCase();
+      valB = valB.toString().toLowerCase();
+
+      if (valA < valB) return sortAsc ? -1 : 1;
+      if (valA > valB) return sortAsc ? 1 : -1;
+      return 0;
+    });
+
+    updateSortIndicators();
+    renderTable(animeData);
+  }
+
+  function updateSortIndicators() {
+    headers.forEach(th => {
+      th.querySelectorAll(".sort-indicator").forEach(el => el.remove());
+      if (th.dataset.key === sortKey) {
+        const span = document.createElement("span");
+        span.className = "sort-indicator";
+        span.textContent = sortAsc ? "▲" : "▼";
+        th.appendChild(span);
+      }
+    });
+  }
+
+  headers.forEach(th => {
+    th.addEventListener("click", () => {
+      sortByKey(th.dataset.key);
+    });
+  });
+
+  loadTheme();
+  loadYaml();
+</script>
+<div id="tooltip" class="character-tooltip"></div>
+</body>
+</html>
