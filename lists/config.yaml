@@ -1,3 +1,5 @@
 files:
   - file: myopia.yaml
     title: Мои очки и линзы
+  - file: electronics.yaml
+    title: Электроника
