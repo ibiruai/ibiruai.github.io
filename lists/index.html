@@ -31,13 +31,13 @@
     }
 
     async function fetchIndex() {
-      const res = await fetch('./config.yaml');
+      const res = await fetch('./config.yaml', { cache: 'reload' });
       const text = await res.text();
       return jsyaml.load(text);
     }
 
     async function loadYAMLFile(filename) {
-        const res = await fetch(filename);
+        const res = await fetch(filename, { cache: 'reload' });
         const text = await res.text();
         return jsyaml.load(text, { schema: jsyaml.FAILSAFE_SCHEMA });
     }
