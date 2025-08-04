@@ -3,3 +3,5 @@ files:
     title: Мои очки и линзы
   - file: electronics.yaml
     title: Электроника
+  - file: medicine.yaml
+    title: Аптека

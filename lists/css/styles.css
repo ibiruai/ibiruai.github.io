@@ -128,3 +128,11 @@ main {
     font-size: 1.2rem;
   }
 }
+
+h1 {
+  display: none;
+}
+
+select#file-selector {
+  margin-left: 0;
+}
