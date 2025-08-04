@@ -23,7 +23,6 @@
 }
 
 select#file-selector {
-  margin-left: 1rem;
   padding: 0.3rem 0.6rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -54,11 +53,6 @@ header {
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-h1 {
-  font-size: 1.5rem;
-  margin: 0;
 }
 
 .toggle-theme {
@@ -123,8 +117,3 @@ main {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.2rem;
-  }
-}

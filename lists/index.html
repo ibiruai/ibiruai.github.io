@@ -9,7 +9,6 @@
 </head>
 <body>
   <header>
-    <h1 id="page-title">Загрузка...</h1>
     <select id="file-selector"></select>
     <button class="toggle-theme" onclick="toggleTheme()">🌓</button>
   </header>
@@ -105,10 +104,6 @@
         async function loadSelectedFile() {
           const filename = select.value;
           const data = await loadYAMLFile(filename);
-
-          const title = fileMap[filename] || 'Список';
-          document.title = title;
-          document.getElementById('page-title').textContent = title;
 
           renderPage(data);
         }
