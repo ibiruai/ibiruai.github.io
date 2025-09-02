@@ -42,6 +42,69 @@
         return jsyaml.load(text, { schema: jsyaml.FAILSAFE_SCHEMA });
     }
 
+    function getDeclension(number, words) {
+      number = Math.abs(number) % 100;
+      const n1 = number % 10;
+      if (number > 10 && number < 20) return words[2];
+      if (n1 > 1 && n1 < 5) return words[1];
+      if (n1 === 1) return words[0];
+      return words[2];
+    }
+
+    function calculateDuration(fromDateStr) {
+      const now = new Date();
+      const fromDate = new Date(fromDateStr);
+      if (isNaN(fromDate)) return 'Некорректная дата';
+
+      let diff = now - fromDate;
+
+      const msInSecond = 1000;
+      const msInMinute = msInSecond * 60;
+      const msInHour = msInMinute * 60;
+      const msInDay = msInHour * 24;
+
+      const years = Math.floor(diff / (msInDay * 365));
+      diff -= years * msInDay * 365;
+
+      const months = Math.floor(diff / (msInDay * 30));
+      diff -= months * msInDay * 30;
+
+      const days = Math.floor(diff / msInDay);
+      diff -= days * msInDay;
+
+      const hours = Math.floor(diff / msInHour);
+      diff -= hours * msInHour;
+
+      const minutes = Math.floor(diff / msInMinute);
+      diff -= minutes * msInMinute;
+
+      const seconds = Math.floor(diff / msInSecond);
+
+      const hasDay = /\d{4}-\d{2}-\d{2}/.test(fromDateStr);
+      const hasTime = /(\d{2}:\d{2}(:\d{2})?)/.test(fromDateStr);
+
+      let parts = [];
+
+      if (!hasDay) {
+        if (years > 0) parts.push(`${years} ${getDeclension(years, ['год', 'года', 'лет'])}`);
+        if (months > 0) parts.push(`${months} ${getDeclension(months, ['месяц', 'месяца', 'месяцев'])}`);
+      } else if (!hasTime) {
+        if (years > 0) parts.push(`${years} ${getDeclension(years, ['год', 'года', 'лет'])}`);
+        if (months > 0) parts.push(`${months} ${getDeclension(months, ['месяц', 'месяца', 'месяцев'])}`);
+        if (days > 0) parts.push(`${days} ${getDeclension(days, ['день', 'дня', 'дней'])}`);
+      } else {
+        if (years > 0) parts.push(`${years} ${getDeclension(years, ['год', 'года', 'лет'])}`);
+        if (months > 0) parts.push(`${months} ${getDeclension(months, ['месяц', 'месяца', 'месяцев'])}`);
+        if (days > 0) parts.push(`${days} ${getDeclension(days, ['день', 'дня', 'дней'])}`);
+        if (hours > 0) parts.push(`${hours} ${getDeclension(hours, ['час', 'часа', 'часов'])}`);
+        if (minutes > 0) parts.push(`${minutes} ${getDeclension(minutes, ['минута', 'минуты', 'минут'])}`);
+        if (seconds > 0) parts.push(`${seconds} ${getDeclension(seconds, ['секунда', 'секунды', 'секунд'])}`);
+      }
+
+      return parts.length > 0 ? parts.join(' ') : '0 секунд';
+    }
+
+
     function renderItem(item) {
       const div = document.createElement('div');
       div.className = 'item';
@@ -55,9 +118,29 @@
 
       for (const key in item) {
         if (key === 'название') continue;
+
         const field = document.createElement('div');
         field.className = 'field';
-        field.innerHTML = `<strong>${key.replace(/_/g, ' ')}:</strong> ${item[key]}`;
+
+        const label = document.createElement('strong');
+        label.textContent = key.replace(/_/g, ' ') + ': ';
+        field.appendChild(label);
+
+        if (typeof item[key] === 'string' && item[key].startsWith('from(')) {
+          const dateStr = item[key].slice(5, -1);
+          const valueSpan = document.createElement('span');
+          valueSpan.textContent = calculateDuration(dateStr);
+          field.appendChild(valueSpan);
+
+          setInterval(() => {
+            valueSpan.textContent = calculateDuration(dateStr);
+          }, 1000);
+        } else {
+          const valueSpan = document.createElement('span');
+          valueSpan.textContent = item[key];
+          field.appendChild(valueSpan);
+        }
+
         div.appendChild(field);
       }
 

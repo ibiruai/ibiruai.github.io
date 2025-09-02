@@ -5,3 +5,5 @@ files:
     title: Электроника
   - file: medicine.yaml
     title: Аптека
+  - file: dates.yaml
+    title: Даты
